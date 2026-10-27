@@ -1,0 +1,472 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "on-secondary-container": "#596376",
+        "surface-variant": "#d4e4fc",
+        "on-tertiary-container": "#4cadab",
+        "primary-fixed": "#d6e3ff",
+        "on-tertiary-fixed-variant": "#00504e",
+        "on-primary-fixed-variant": "#2d476f",
+        "secondary-fixed-dim": "#bdc7dc",
+        "on-primary-container": "#86a0cd",
+        "error-container": "#ffdad6",
+        "secondary-container": "#d6e0f6",
+        "inverse-primary": "#adc7f7",
+        "inverse-on-surface": "#eaf1ff",
+        "surface-dim": "#ccdbf4",
+        "on-error": "#ffffff",
+        "tertiary-fixed-dim": "#77d6d3",
+        "outline-variant": "#c4c6cf",
+        "surface-container-highest": "#d4e4fc",
+        "on-tertiary": "#ffffff",
+        "on-tertiary-fixed": "#00201f",
+        "surface-container-lowest": "#ffffff",
+        "on-background": "#0d1c2e",
+        "background": "#f8f9ff",
+        "tertiary-container": "#003d3c",
+        "surface-bright": "#f8f9ff",
+        "error": "#ba1a1a",
+        "primary-fixed-dim": "#adc7f7",
+        "secondary": "#555f71",
+        "surface": "#f8f9ff",
+        "tertiary-fixed": "#94f2f0",
+        "primary-container": "#1a365d",
+        "on-surface": "#0d1c2e",
+        "surface-container-low": "#eff4ff",
+        "on-secondary-fixed": "#121c2c",
+        "primary": "#002045",
+        "secondary-fixed": "#d9e3f9",
+        "on-error-container": "#93000a",
+        "outline": "#74777f",
+        "on-primary": "#ffffff",
+        "surface-container": "#e5eeff",
+        "on-primary-fixed": "#001b3c",
+        "surface-container-high": "#dce9ff",
+        "inverse-surface": "#223144",
+        "on-secondary-fixed-variant": "#3d4759",
+        "surface-tint": "#455f88",
+        "on-surface-variant": "#43474e",
+        "tertiary": "#002625",
+        "on-secondary": "#ffffff"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      "spacing": {
+        "space-sm": "0.5rem",
+        "space-xs": "0.25rem",
+        "margin-mobile": "1rem",
+        "space-xl": "2rem",
+        "space-lg": "1.5rem",
+        "margin": "2rem",
+        "space-md": "1rem",
+        "gutter-mobile": "1rem",
+        "gutter": "1.5rem"
+      },
+      "fontFamily": {
+        "headline-lg-mobile": ["Inter"],
+        "headline-lg": ["Inter"],
+        "label-sm": ["Inter"],
+        "body-md": ["Inter"],
+        "title-sm": ["Inter"],
+        "display": ["Inter"],
+        "headline-md": ["Inter"],
+        "label-md": ["Inter"],
+        "title-md": ["Inter"],
+        "headline-sm": ["Inter"],
+        "label-caps": ["Inter"],
+        "body-lg": ["Inter"],
+        "body-sm": ["Inter"]
+      },
+      "fontSize": {
+        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+        "body-md": ["14px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}],
+        "title-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "600"}],
+        "display": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+        "title-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600"}],
+        "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600"}],
+        "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600"}],
+        "body-lg": ["16px", {"lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400"}],
+        "body-sm": ["12px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400"}]
+      }
+    }
+  }
+}</script></head><body class="bg-background font-body-md text-body-md text-on-surface"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm text-primary no-underline" data-path="directorio" href="#"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">gavel</span></div><span class="font-title-md text-title-md tracking-tight text-primary font-bold">Lex<span class="text-secondary">Portal</span></span></a><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-title-sm border-b-2 border-primary"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface py-space-sm transition-colors" data-path="directorio" href="#">Directorio</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface py-space-sm transition-colors" data-path="especialidades" href="#">Especialidades</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface py-space-sm transition-colors" data-path="consultas" href="#">Consultas</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface py-space-sm transition-colors" data-path="asistencia" href="#">Asistencia</a></nav></div><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container-low hover:bg-surface-container hover:text-on-surface text-on-surface rounded-xl font-label-md text-label-md transition-colors" data-path="mi-cuenta" href="#"><span class="material-symbols-outlined text-[18px] text-secondary">lock</span>Mi Cuenta</a><a aria-label="Perfil de usuario" class="flex items-center pl-space-xs" data-path="mi-cuenta" href="#"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></a></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full relative">
+<!-- BACKGROUND CONTEXT: Perfil Letrada Dra. Valentina Restrepo (LexPortal) -->
+<div class="w-full max-w-7xl mx-auto px-margin py-space-xl opacity-40 filter blur-[2px] pointer-events-none select-none">
+<!-- Breadcrumb & Top Bar -->
+<div class="flex items-center justify-between gap-space-md mb-space-lg">
+<div class="flex items-center gap-space-sm text-secondary">
+<span class="font-body-sm text-body-sm">Directorio</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="font-body-sm text-body-sm">Especialistas en Derecho Laboral</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="font-title-sm text-title-sm text-primary font-semibold">Dra. Valentina Restrepo</span>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-full">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Colegiada ICAM Nº 84.219 • En Ejercicio</span>
+</div>
+</div>
+<!-- Lawyer Hero Profile Card -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl bg-surface-container-lowest p-space-xl rounded-xl shadow-md">
+<div class="lg:col-span-4 flex flex-col items-center text-center">
+<div class="relative w-36 h-36 rounded-full overflow-hidden shadow-md mb-space-md">
+<img class="w-full h-full object-cover" data-alt="Professional corporate headshot of Dra. Valentina Restrepo, a Hispanic female lawyer in her late 30s with confident warm smile, wearing a tailored navy blue blazer in a sunlit modern legal office with architectural bookshelf background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCezqpCGRZV1UTY4n_tW2maKbignVeZjN2EVmxYb14Saz_pu4qLOUgNRlfvwtoDqfFTY7Q7PD73tW3odi2NOhGL83hFozAoDZpjGvbHBGV6VH-TQGzMvXmU5PkWs_yoc92KAda_eGVK3wKNt14NY3wNjPdVv3qHXucRWorqt4OuY7_Ms0YElRyw7OlGlElpLRTqzBw-QbxZm44o_Rzbt4LOznUXAkPQa6PqvYNRDAHC">
+</div>
+<div class="font-headline-md text-headline-md text-primary font-bold">Dra. Valentina Restrepo</div>
+<div class="font-body-md text-body-md text-secondary">Socia Directora • Restrepo &amp; Asociados</div>
+<div class="flex items-center gap-space-xs mt-space-sm text-secondary">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span class="font-body-sm text-body-sm">Paseo de la Castellana 140, Madrid</span>
+</div>
+<div class="mt-space-lg w-full flex flex-col gap-space-xs">
+<div class="flex justify-between py-space-xs font-body-sm text-body-sm">
+<span class="text-secondary">Experiencia:</span>
+<span class="font-semibold text-primary">14 años</span>
+</div>
+<div class="flex justify-between py-space-xs font-body-sm text-body-sm">
+<span class="text-secondary">Casos resueltos:</span>
+<span class="font-semibold text-primary">480+ litigios</span>
+</div>
+<div class="flex justify-between py-space-xs font-body-sm text-body-sm">
+<span class="text-secondary">Índice favorable:</span>
+<span class="font-semibold text-primary">96.4%</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col justify-between">
+<div>
+<div class="flex flex-wrap gap-space-xs mb-space-md">
+<span class="px-space-sm py-space-xs rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Despidos Improcedentes</span>
+<span class="px-space-sm py-space-xs rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Reclamación de Cantidad</span>
+<span class="px-space-sm py-space-xs rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Acoso Laboral (Mobbing)</span>
+<span class="px-space-sm py-space-xs rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">Expedientes ERE/ERTE</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-space-sm">Defensa jurídica integral del trabajador y directivos</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+            Especialista en derecho sustantivo laboral y procesal ante los Juzgados de lo Social y Tribunales Superiores de Justicia. Asesoramiento estratégico con enfoque pragmático para resolución extrajudicial ventajosa o litigio resolutivo.
+          </p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-primary text-[28px]">verified</span>
+<div>
+<div class="font-title-sm text-title-sm text-primary">Acreditación Verificada por el Colegio de Abogados</div>
+<div class="font-body-sm text-body-sm text-secondary">Póliza de Responsabilidad Civil vigente hasta 2.000.000 €</div>
+</div>
+</div>
+<div class="px-space-lg py-space-sm bg-primary text-on-primary rounded-xl font-label-md text-label-md">
+            Disponible
+          </div>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL BACKDROP (OVERLAY OSCURO TRASLÚCIDO + BACKDROP-BLUR) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md sm:p-space-lg bg-[#001b3c]/60 backdrop-blur-md overflow-y-auto" id="lex-contact-modal-overlay">
+<!-- MODAL CONTAINER -->
+<div aria-labelledby="modal-title" aria-modal="true" class="relative w-full max-w-2xl bg-surface-container-lowest rounded-xl shadow-2xl my-auto overflow-hidden animate-[fadeIn_0.2s_ease-out]" role="dialog">
+<!-- Top Decorative Identity Stripe -->
+<div class="h-1.5 w-full bg-gradient-to-r from-primary via-primary-container to-secondary"></div>
+<!-- 1. ENCABEZADO DEL MODAL -->
+<div class="px-space-xl pt-space-lg pb-space-md bg-surface-container-lowest">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<!-- Badge / Etiqueta Superior -->
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-0.5 rounded-full bg-surface-container-low text-primary">
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-label-caps text-label-caps tracking-wider uppercase font-semibold">Atención Legal Inmediata • Solicitud Segura</span>
+</div>
+<!-- Título Claro y Prominente -->
+<h1 class="font-headline-md text-headline-md text-primary font-bold tracking-tight mt-space-xs" id="modal-title">
+              Solicitar contacto legal
+            </h1>
+<!-- Contextual Lawyer Indicator -->
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">badge</span>
+<span>Para evaluar con: <strong class="text-on-surface">Dra. Valentina Restrepo</strong> (Letrada Colegiada ICAM Nº 84.219)</span>
+</div>
+<!-- Subtítulo Explicativo y Tranquilizador -->
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+              Describe tu situación para que el letrado colegiado pueda evaluar la viabilidad de tu caso sin compromiso. Tus datos están rigurosamente amparados.
+            </p>
+</div>
+<!-- Botón de Cierre 'X' -->
+<button aria-label="Cerrar ventana modal" class="flex-shrink-0 w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary hover:text-primary flex items-center justify-center transition-colors" id="btn-close-modal" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- FORM CONTENT -->
+<form class="px-space-xl py-space-md flex flex-col gap-space-lg" id="legal-contact-form" onsubmit="event.preventDefault();">
+<!-- 2. CLASIFICACIÓN DEL CASO -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-title-sm text-title-sm text-primary flex items-center gap-space-xs" for="matter-select">
+<span>Clasificar el caso</span>
+<span aria-hidden="true" class="text-error font-bold">*</span>
+</label>
+<span class="font-label-caps text-label-caps text-secondary uppercase">Paso 1 de 2</span>
+</div>
+<!-- Select Estilizado -->
+<div class="relative w-full">
+<select class="w-full h-11 pl-space-md pr-10 rounded-lg bg-surface-container-low hover:bg-surface-container-high/60 focus:bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm appearance-none outline-none focus:ring-2 focus:ring-primary/25 transition-all cursor-pointer" id="matter-select" required="">
+<option class="text-secondary" disabled="" selected="" value="">Selecciona el área o materia jurídica</option>
+<option class="py-1" value="laboral">Laboral y Despidos (Finiquitos, EREs, Sanciones, Salarios)</option>
+<option class="py-1" value="pensiones">Pensiones y Seguridad Social (Incapacidades, Jubilación)</option>
+<option class="py-1" value="civil">Civil y Contratos (Arrendamientos, Incumplimientos, Deudas)</option>
+<option class="py-1" value="familia">Familia y Sucesiones (Divorcios, Custodia, Herencias)</option>
+<option class="py-1" value="mercantil">Mercantil / Empresas (Societario, Concursal, Socios)</option>
+<option class="py-1" value="penal">Penal y Garantías (Defensa, Querellas, Delitos Económicos)</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-space-md text-secondary">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Checkbox 'No sé cómo clasificarlo' -->
+<div class="mt-space-xs p-space-sm rounded-lg bg-surface-container-low/70 flex items-start gap-space-sm hover:bg-surface-container-low transition-colors">
+<input class="mt-0.5 w-4 h-4 rounded text-primary focus:ring-primary focus:ring-offset-0 cursor-pointer accent-primary" id="unclassified-checkbox" type="checkbox">
+<label class="cursor-pointer select-none" for="unclassified-checkbox">
+<span class="font-title-sm text-title-sm text-on-surface block leading-tight">No sé cómo clasificarlo</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5 leading-snug">
+                Un orientador jurídico asignará la materia adecuada tras leer tu descripción preliminar.
+              </span>
+</label>
+</div>
+</div>
+<!-- 3. CAMPOS DE TEXTO AMPLIOS -->
+<!-- Campo 1: Descripción del caso -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-title-sm text-title-sm text-primary flex items-center gap-space-xs" for="case-description">
+<span class="material-symbols-outlined text-[18px] text-secondary">description</span>
+<span>Descripción del caso</span>
+<span aria-hidden="true" class="text-error font-bold">*</span>
+</label>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary">
+<span id="desc-counter">0</span><span>/ 2000 car.</span>
+</div>
+</div>
+<div class="relative">
+<textarea class="w-full p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container-high/40 focus:bg-surface-container-lowest text-on-surface placeholder:text-secondary font-body-md text-body-md shadow-sm outline-none focus:ring-2 focus:ring-primary/25 transition-all resize-none leading-relaxed" id="case-description" placeholder="Describe brevemente qué sucedió, fechas clave, y detalles relevantes de los hechos ocurridos..." required="" rows="4"></textarea>
+</div>
+<!-- Indicador de Detalle Mínimo Recomendado -->
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary" id="detail-indicator-icon">info</span>
+<span id="detail-indicator-text">Recomendamos al menos 60 caracteres para un diagnóstico procesal preliminar.</span>
+</div>
+<div class="hidden sm:flex w-24 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary transition-all duration-300 w-0" id="detail-progress"></div>
+</div>
+</div>
+</div>
+<!-- Campo 2: Ayuda buscada -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-title-sm text-title-sm text-primary flex items-center gap-space-xs" for="goal-description">
+<span class="material-symbols-outlined text-[18px] text-secondary">flag</span>
+<span>Ayuda buscada</span>
+<span aria-hidden="true" class="text-error font-bold">*</span>
+</label>
+<span class="font-label-sm text-label-sm text-secondary">Objetivo jurídico</span>
+</div>
+<div class="relative">
+<textarea class="w-full p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container-high/40 focus:bg-surface-container-lowest text-on-surface placeholder:text-secondary font-body-md text-body-md shadow-sm outline-none focus:ring-2 focus:ring-primary/25 transition-all resize-none leading-relaxed" id="goal-description" placeholder="Indica qué objetivo o solución jurídica esperas obtener (ej. cálculo de indemnización, conciliación extrajudicial, representación en juicio, revisión de finiquito)..." required="" rows="3"></textarea>
+</div>
+<!-- Suggested Quick Tags -->
+<div class="flex flex-wrap items-center gap-space-xs mt-0.5">
+<span class="font-label-caps text-label-caps text-secondary mr-1 uppercase">Sugerencias rápidas:</span>
+<button class="px-space-sm py-0.5 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm transition-colors cursor-pointer" onclick="appendGoal('Revisión urgente de liquidación y finiquito')" type="button">
+              + Finiquito
+            </button>
+<button class="px-space-sm py-0.5 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm transition-colors cursor-pointer" onclick="appendGoal('Demanda por despido improcedente')" type="button">
+              + Despido
+            </button>
+<button class="px-space-sm py-0.5 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm transition-colors cursor-pointer" onclick="appendGoal('Papeleta de conciliación SMAC')" type="button">
+              + Conciliación SMAC
+            </button>
+<button class="px-space-sm py-0.5 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm transition-colors cursor-pointer" onclick="appendGoal('Segunda opinión técnica')" type="button">
+              + 2ª Opinión
+            </button>
+</div>
+</div>
+<!-- 4. GARANTÍAS Y CONFIDENCIALIDAD -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-start gap-space-md shadow-sm">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="font-title-sm text-title-sm text-primary flex items-center gap-space-xs">
+<span>Garantía de Privacidad Procesal</span>
+<span class="inline-flex items-center px-1.5 py-0.2 rounded text-[10px] bg-surface-container-highest text-primary font-bold tracking-wider uppercase">eIDAS 2.0</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+              Comunicaciones protegidas bajo <strong>secreto profesional</strong> (Art. 74 C.P. y Estatuto General de la Abogacía) y cifrado de extremo a extremo TLS 1.3 con custodia certificada.
+            </p>
+</div>
+</div>
+<!-- 5. BOTONES DE ACCIÓN -->
+<div class="pt-space-sm pb-space-xs flex flex-col-reverse sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Sin coste por remisión preliminar</span>
+</div>
+<div class="flex items-center gap-space-md w-full sm:w-auto justify-end">
+<!-- Botón Secundario: Cancelar -->
+<button class="w-full sm:w-auto px-space-lg py-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container active:bg-surface-container-high text-on-surface font-label-md text-label-md font-medium transition-colors shadow-sm" id="btn-cancel" type="button">
+              Cancelar
+            </button>
+<!-- Botón Primario Prominente: Enviar Solicitud -->
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-2.5 rounded-lg bg-primary hover:bg-primary-container active:bg-[#001733] text-on-primary font-label-md text-label-md font-semibold transition-all shadow-md hover:shadow-lg focus:ring-4 focus:ring-primary/30" id="btn-submit" type="submit">
+<span>Enviar solicitud</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const overlay = document.getElementById('lex-contact-modal-overlay');
+    const btnClose = document.getElementById('btn-close-modal');
+    const btnCancel = document.getElementById('btn-cancel');
+    const btnSubmit = document.getElementById('btn-submit');
+    const checkboxUnclassified = document.getElementById('unclassified-checkbox');
+    const selectMatter = document.getElementById('matter-select');
+    const descTextarea = document.getElementById('case-description');
+    const descCounter = document.getElementById('desc-counter');
+    const detailProgress = document.getElementById('detail-progress');
+    const detailText = document.getElementById('detail-indicator-text');
+    const detailIcon = document.getElementById('detail-indicator-icon');
+
+    // Close Modal Handling
+    function closeModal() {
+      if (overlay) {
+        overlay.classList.add('opacity-0', 'pointer-events-none', 'transition-opacity', 'duration-200');
+        setTimeout(() => {
+          overlay.style.display = 'none';
+        }, 200);
+      }
+    }
+
+    if (btnClose) btnClose.addEventListener('click', closeModal);
+    if (btnCancel) btnCancel.addEventListener('click', closeModal);
+
+    // Close on click outside modal dialog
+    if (overlay) {
+      overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+          closeModal();
+        }
+      });
+    }
+
+    // Escape key closes modal
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay && overlay.style.display !== 'none') {
+        closeModal();
+      }
+    });
+
+    // Handle 'No sé cómo clasificarlo' interaction
+    if (checkboxUnclassified && selectMatter) {
+      checkboxUnclassified.addEventListener('change', function() {
+        if (this.checked) {
+          selectMatter.value = '';
+          selectMatter.disabled = true;
+          selectMatter.classList.add('opacity-50', 'bg-surface-container-highest');
+        } else {
+          selectMatter.disabled = false;
+          selectMatter.classList.remove('opacity-50', 'bg-surface-container-highest');
+        }
+      });
+    }
+
+    // Textarea counter and detail recommendation indicator
+    if (descTextarea && descCounter && detailProgress) {
+      descTextarea.addEventListener('input', function() {
+        const length = this.value.length;
+        descCounter.textContent = length;
+
+        // Progress calc based on target of 120 chars
+        const percentage = Math.min(100, Math.round((length / 120) * 100));
+        detailProgress.style.width = percentage + '%';
+
+        if (length < 60) {
+          detailProgress.className = 'h-full bg-secondary transition-all duration-300';
+          detailText.textContent = 'Recomendamos al menos 60 caracteres para un diagnóstico procesal preliminar.';
+          detailIcon.textContent = 'info';
+          detailIcon.className = 'material-symbols-outlined text-[16px] text-secondary';
+        } else if (length < 120) {
+          detailProgress.className = 'h-full bg-primary transition-all duration-300';
+          detailText.textContent = 'Nivel de detalle adecuado. Puedes añadir fechas relevantes.';
+          detailIcon.textContent = 'check_circle';
+          detailIcon.className = 'material-symbols-outlined text-[16px] text-primary';
+        } else {
+          detailProgress.className = 'h-full bg-primary-container transition-all duration-300';
+          detailText.textContent = 'Excelente nivel de detalle para asignación procesal de alta precisión.';
+          detailIcon.textContent = 'verified';
+          detailIcon.className = 'material-symbols-outlined text-[16px] text-primary';
+        }
+      });
+    }
+
+    // Helper to inject suggested goals
+    window.appendGoal = function(text) {
+      const goalEl = document.getElementById('goal-description');
+      if (!goalEl) return;
+      if (goalEl.value.trim() === '') {
+        goalEl.value = text;
+      } else {
+        goalEl.value = goalEl.value.trim() + ' • ' + text;
+      }
+      goalEl.focus();
+    };
+
+    // Submission feedback micro-interaction
+    const form = document.getElementById('legal-contact-form');
+    if (form && btnSubmit) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Basic check for either category selected or 'no sé' checked
+        if (!checkboxUnclassified.checked && !selectMatter.value) {
+          selectMatter.focus();
+          return;
+        }
+
+        btnSubmit.disabled = true;
+        btnSubmit.innerHTML = `
+          <span class="material-symbols-outlined animate-spin text-[18px]">progress_activity</span>
+          <span>Cifrando y enviando...</span>
+        `;
+        
+        setTimeout(() => {
+          btnSubmit.className = 'w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-md';
+          btnSubmit.innerHTML = `
+            <span class="material-symbols-outlined text-[18px]">check_circle</span>
+            <span>Solicitud registrada Nº LP-84219</span>
+          `;
+          setTimeout(() => {
+            closeModal();
+          }, 1200);
+        }, 900);
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_6px_rgba(0,0,0,0.03)] mt-space-xl"><div class="max-w-7xl mx-auto px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter pb-space-xl"><div class="md:col-span-1 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm text-primary"><div class="w-8 h-8 rounded-xl bg-primary flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[18px]">balance</span></div><span class="font-title-md text-title-md font-bold text-primary">LexPortal</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Plataforma legal institucional y directorio colegiado verificado con garantía de rigor deontológico y confidencialidad procesal.</p><div class="flex items-center gap-space-xs mt-space-sm"><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-low rounded-xl text-primary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-primary">verified_user</span>Colegiación Certificada</div></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-sm text-title-sm text-primary font-semibold">Directorio Jurídico</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="directorio" href="#">Bufetes y Letrados</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="especialidades" href="#">Áreas del Derecho</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="directorio" href="#">Peritaje Forense</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="directorio" href="#">Jurisdicciones</a></div><div class="flex flex-col gap-space-sm"><span class="font-title-sm text-title-sm text-primary font-semibold">Servicios y Apoyo</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="consultas" href="#">Expedientes Digitales</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="asistencia" href="#">Mesa de Asistencia Legal</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="mi-cuenta" href="#">Portal para Letrados</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="asistencia" href="#">Centro de Recursos</a></div><div class="flex flex-col gap-space-sm"><span class="font-title-sm text-title-sm text-primary font-semibold">Sellos de Confianza y Seguridad</span><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs p-space-sm rounded-xl bg-surface-container-low"><span class="material-symbols-outlined text-primary text-[20px]">security</span><div><div class="font-label-sm text-label-sm text-primary font-semibold">Cifrado Notarial TLS 1.3</div><div class="font-label-caps text-label-caps text-on-surface-variant">Certificación eIDAS Compliant</div></div></div><div class="flex items-center gap-space-xs p-space-sm rounded-xl bg-surface-container-low"><span class="material-symbols-outlined text-primary text-[20px]">verified</span><div><div class="font-label-sm text-label-sm text-primary font-semibold">Auditoría de Colegiación</div><div class="font-label-caps text-label-caps text-on-surface-variant">Verificación RGPD y Secreto Profesional</div></div></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-low rounded-xl px-space-lg py-space-md"><div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm"><span>© 2025 LexPortal Legal Network S.L. Todos los derechos reservados.</span></div><div class="flex flex-wrap items-center gap-space-lg font-label-sm text-label-sm text-on-surface-variant"><a class="hover:text-on-surface transition-colors" data-path="asistencia" href="#">Aviso Legal</a><a class="hover:text-on-surface transition-colors" data-path="asistencia" href="#">Política de Privacidad</a><a class="hover:text-on-surface transition-colors" data-path="asistencia" href="#">Código Deontológico</a><a class="hover:text-on-surface transition-colors" data-path="asistencia" href="#">Seguridad de la Información</a></div></div></div></footer></body></html>

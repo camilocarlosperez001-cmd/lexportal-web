@@ -1,0 +1,326 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-surface-variant":"#43474e","on-secondary-fixed-variant":"#3d4759","tertiary-container":"#003d3c","on-tertiary":"#ffffff","primary":"#002045","on-error":"#ffffff","tertiary":"#002625","on-background":"#0d1c2e","primary-fixed-dim":"#adc7f7","outline":"#74777f","inverse-on-surface":"#eaf1ff","on-tertiary-container":"#4cadab","on-primary-fixed-variant":"#2d476f","secondary-fixed":"#d9e3f9","on-secondary-container":"#596376","on-secondary-fixed":"#121c2c","on-primary-container":"#86a0cd","inverse-primary":"#adc7f7","primary-fixed":"#d6e3ff","on-error-container":"#93000a","on-secondary":"#ffffff","surface-container-low":"#eff4ff","on-surface":"#0d1c2e","secondary-container":"#d6e0f6","surface-dim":"#ccdbf4","surface-variant":"#d4e4fc","surface-container-lowest":"#ffffff","surface-container-highest":"#d4e4fc","on-primary":"#ffffff","on-tertiary-fixed-variant":"#00504e","secondary-fixed-dim":"#bdc7dc","error-container":"#ffdad6","tertiary-fixed":"#94f2f0","surface-bright":"#f8f9ff","secondary":"#555f71","on-tertiary-fixed":"#00201f","surface-container-high":"#dce9ff","background":"#f8f9ff","primary-container":"#1a365d","surface-container":"#e5eeff","surface-tint":"#455f88","inverse-surface":"#223144","error":"#ba1a1a","on-primary-fixed":"#001b3c","outline-variant":"#c4c6cf","tertiary-fixed-dim":"#77d6d3","surface":"#f8f9ff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","margin-mobile":"1rem","space-md":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-xl":"2rem","gutter":"1.5rem","margin":"2rem"},"fontFamily":{"headline-lg":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"headline-md":["Inter"],"display":["Inter"],"title-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"title-sm":["Inter"],"label-caps":["Inter"],"body-sm":["Inter"],"headline-sm":["Inter"],"headline-lg-mobile":["Inter"]},"fontSize":{"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"title-sm":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="LexPortal Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VzfnUAQjz4EvzbZtSdZp1LqEzrdiMGsoLI3z9tofoLVOH-gGDye186E08wD9YZmxB7w_oECNgJ0IYmjN1ncLV1nvsdLryhmff5-nnDFmp4PlxFiSvf2sjewzXsgCAcxwvYaviaFsk237VmqNH7h6K11Yd7bKAnck4sxM4PC45-8Jw0GT4eTAXdu4yiyTiWz2pYvIIe2FzYihsEiU4GWJJthmmH3xab_u3sjPge6q6jQA"><span class="font-title-sm text-title-sm text-primary tracking-tight hidden sm:inline">LexPortal</span><span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps uppercase">Acceso Ciudadano</span></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm bg-surface-container-low px-3 py-1 rounded-full border border-outline-variant"><span class="material-symbols-outlined text-[16px] text-tertiary-container">lock</span><span class="hidden sm:inline">Conexión Segura cifrada de 256 bits</span><span class="sm:hidden">SSL 256 bits</span></div><div class="hidden md:flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px]">help</span><span>¿Necesitas ayuda?</span><a class="text-primary hover:text-on-primary-container font-label-sm text-label-sm transition-colors" href="mailto:soporte@lexportal.jur">soporte@lexportal.jur</a></div><nav class="flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors px-3 py-1.5 rounded" data-path="autenticacion-ciudadana" href="#">Identificación</a><a aria-current="page" class="font-label-md transition-colors px-3 py-1.5 rounded bg-primary-container text-on-primary" data-path="registro-ciudadano" href="#">Registro</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors px-3 py-1.5 rounded" data-path="guia-acceso" href="#">Guía de Acceso</a></nav></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)] flex-1 flex flex-col justify-between"><div class="flex flex-col w-full">
+<div class="relative w-full overflow-hidden py-10 px-4 sm:px-6 lg:px-8">
+<div class="absolute -top-40 -left-40 w-96 h-96 rounded-full bg-surface-container-high opacity-40 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -right-40 w-96 h-96 rounded-full bg-surface-variant opacity-30 blur-3xl pointer-events-none"></div>
+<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative z-10">
+<!-- Asymmetric Editorial Side Panel (Authority & Trust Context) -->
+<div class="lg:col-span-5 flex flex-col justify-between space-y-6 pt-2 lg:pt-6">
+<div class="space-y-4">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-caps text-label-caps uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+            Portal Oficial de Justicia Ciudadana
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            Garantía legal y seguridad en cada trámite digital.
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            LexPortal centraliza la protección de tus derechos fundamentales. Consulta expedientes, gestiona requerimientos y radica trámites certificados con validez judicial probatoria.
+          </p>
+</div>
+<!-- Rich Contextual Visual (Photo-Rich Citizen Trust) -->
+<div class="relative rounded-xl overflow-hidden shadow-md bg-surface-container-lowest">
+<img class="w-full h-48 object-cover" data-alt="Modern high-tech legal courtroom and consultation office interior bathed in gentle natural morning sunlight. Cool corporate navy tones, elegant wooden accents, clean minimalist desk with digital biometric verification tablet and legal books, professional institutional atmosphere representing security and legal integrity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_KOuiFWWJz1aBJYUr2WxEnYDFTEwZ90N-CdCdhrJsprkslXyRT74Ena3vyvWtbmL9-UePGIZGIBllU20BWC8UzJs8papxXAKUWGcT4XKxQzDYJZhXBG34sNL8CBmLxdrKrDGx2Rmh3NHMcc3j-h3eQQFdLrUp2YdDXyh93Mo9PSvTt5o5lN_oJQtBPbht8rW9etSlj6CCAXJ1hFpdhk7bdqf0TWMmwl-7xN9kxSe0">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-5 text-on-primary">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary-fixed-dim">Certificación Nacional</span>
+<span class="font-title-sm text-title-sm font-semibold">Infraestructura Tecnológica de la Fe Pública</span>
+</div>
+</div>
+<!-- System Metric & Trust Cards Grid -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center gap-space-xs text-primary mb-2">
+<span class="material-symbols-outlined text-[20px]">enhanced_encryption</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Seguridad</span>
+</div>
+<span class="font-title-sm text-title-sm text-primary font-semibold">Cifrado Militar</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">256-bit SSL en reposo y tránsito</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center gap-space-xs text-tertiary mb-2">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Acceso</span>
+</div>
+<span class="font-title-sm text-title-sm text-primary font-semibold">100% Gratuito</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Radicación inicial de peticiones</span>
+</div>
+</div>
+<!-- Legal Compliance Micro-banner -->
+<div class="bg-surface-container-low p-4 rounded-xl flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined">gavel</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-primary font-semibold block">Protocolo Notarial eIDAS Compliant</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block truncate">Trazabilidad con sello de tiempo inmutable</span>
+</div>
+</div>
+</div>
+<!-- Main Registration Card -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl shadow-md p-6 sm:p-10 transition-shadow">
+<!-- Header & Badges -->
+<div class="flex flex-col space-y-2 mb-8">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+              Acceso Ciudadano Seguro
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Paso 1 de 2</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-semibold pt-1">
+            Crea tu cuenta
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Accede a consultas jurídicas confiables, seguimiento de trámites y asesoría legal personalizada.
+          </p>
+</div>
+<!-- Registration Form -->
+<form class="space-y-5" id="citizen-registration-form" onsubmit="event.preventDefault(); return false;">
+<!-- Field 1: Full Name -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium flex items-center justify-between" for="fullname">
+<span>Nombre completo</span>
+<span class="font-body-sm text-body-sm text-secondary">Obligatorio</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px] pointer-events-none">
+                person
+              </span>
+<input class="w-full h-11 pl-11 pr-4 bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-primary/20 bg-surface-container-low" id="fullname" name="fullname" placeholder="Ej. Andrea Restrepo Gómez" required="" type="text">
+</div>
+</div>
+<!-- Field 2: Email -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium flex items-center justify-between" for="email">
+<span>Correo electrónico</span>
+<span class="font-body-sm text-body-sm text-secondary">Para notificaciones judiciales</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px] pointer-events-none">
+                mail
+              </span>
+<input class="w-full h-11 pl-11 pr-4 bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-primary/20 bg-surface-container-low" id="email" name="email" placeholder="nombre@correo.com" required="" type="email">
+</div>
+</div>
+<!-- Field 3: Password with Eye Toggle & Strength Meter -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium flex items-center justify-between" for="password">
+<span>Contraseña maestra</span>
+<span class="font-body-sm text-body-sm text-secondary">Mínimo 8 caracteres</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px] pointer-events-none">
+                lock
+              </span>
+<input class="w-full h-11 pl-11 pr-12 bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-primary/20 bg-surface-container-low" id="password" name="password" placeholder="Ingresa una clave segura" required="" type="password">
+<button aria-label="Mostrar u ocultar contraseña" class="absolute right-3.5 text-outline hover:text-on-surface transition-colors p-1 flex items-center justify-center rounded focus:outline-none" id="toggle-password-btn" type="button">
+<span class="material-symbols-outlined text-[20px]" id="password-visibility-icon">
+                  visibility
+                </span>
+</button>
+</div>
+<!-- Dynamic Password Strength Bar -->
+<div class="pt-2">
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden flex gap-1">
+<div class="h-full w-1/4 bg-surface-container rounded-full transition-all duration-300" id="bar-step-1"></div>
+<div class="h-full w-1/4 bg-surface-container rounded-full transition-all duration-300" id="bar-step-2"></div>
+<div class="h-full w-1/4 bg-surface-container rounded-full transition-all duration-300" id="bar-step-3"></div>
+<div class="h-full w-1/4 bg-surface-container rounded-full transition-all duration-300" id="bar-step-4"></div>
+</div>
+<div class="flex items-center justify-between mt-1.5 text-label-sm font-label-sm">
+<span class="text-on-surface-variant font-medium" id="strength-label">Fuerza: Incompleta</span>
+<span class="text-secondary">Usa mayúsculas, números y símbolos</span>
+</div>
+</div>
+<!-- Validation Badges Pill Container -->
+<div class="grid grid-cols-2 gap-2 pt-1 text-label-sm font-label-sm">
+<div class="flex items-center gap-1.5 text-on-surface-variant" id="rule-length">
+<span class="material-symbols-outlined text-[16px]">radio_button_unchecked</span>
+<span>8+ caracteres</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant" id="rule-upper">
+<span class="material-symbols-outlined text-[16px]">radio_button_unchecked</span>
+<span>Al menos 1 mayúscula</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant" id="rule-number">
+<span class="material-symbols-outlined text-[16px]">radio_button_unchecked</span>
+<span>Al menos 1 número</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant" id="rule-special">
+<span class="material-symbols-outlined text-[16px]">radio_button_unchecked</span>
+<span>Carácter especial (!@#$)</span>
+</div>
+</div>
+</div>
+<!-- Legal Terms & Personal Data Consents -->
+<div class="pt-2 space-y-3">
+<label class="flex items-start gap-3 cursor-pointer group select-none">
+<div class="relative flex items-center justify-center mt-0.5">
+<input class="peer appearance-none w-5 h-5 rounded bg-surface-container-low checked:bg-primary transition-all cursor-pointer" id="agree-terms" name="agree_terms" required="" type="checkbox">
+<span class="material-symbols-outlined absolute text-[16px] text-on-primary opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity">
+                  check
+                </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-surface leading-snug">
+                Acepto los <a class="text-primary font-title-sm hover:underline" href="#">Términos y Condiciones</a> del servicio legal digital de LexPortal.
+              </span>
+</label>
+<label class="flex items-start gap-3 cursor-pointer group select-none">
+<div class="relative flex items-center justify-center mt-0.5">
+<input class="peer appearance-none w-5 h-5 rounded bg-surface-container-low checked:bg-primary transition-all cursor-pointer" id="agree-privacy" name="agree_privacy" required="" type="checkbox">
+<span class="material-symbols-outlined absolute text-[16px] text-on-primary opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity">
+                  check
+                </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-surface leading-snug">
+                Autorizo el <a class="text-primary font-title-sm hover:underline" href="#">Tratamiento de mis Datos Personales</a> conforme a la política de privacidad y protección de identidad.
+              </span>
+</label>
+</div>
+<!-- Primary Submit Action Button -->
+<div class="pt-3">
+<button class="w-full h-12 bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md font-semibold rounded-lg flex items-center justify-center gap-space-sm shadow-md hover:shadow-lg active:scale-[0.99] transition-all duration-150 group" id="submit-register-btn" type="submit">
+<span>Registrarme</span>
+<span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">
+                arrow_forward
+              </span>
+</button>
+</div>
+</form>
+<!-- Divider with Centered Minimalist Dot -->
+<div class="flex items-center justify-center my-6">
+<div class="h-px bg-surface-container w-full"></div>
+<span class="px-3 bg-surface-container-lowest font-label-caps text-label-caps text-outline uppercase tracking-wider">o</span>
+<div class="h-px bg-surface-container w-full"></div>
+</div>
+<!-- Login Switch Anchor -->
+<div class="text-center pt-1">
+<p class="font-body-md text-body-md text-on-surface-variant">
+            ¿Ya eres usuario registrado? 
+            <a class="text-primary font-title-sm text-title-sm hover:underline transition-colors ml-1" href="#">
+              Inicia sesión
+            </a>
+</p>
+</div>
+</div>
+</div>
+<!-- Assurance Verification Footnote Bar -->
+<div class="max-w-6xl mx-auto mt-12 bg-surface-container-low rounded-xl p-6 shadow-sm grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[28px]">lock_clock</span>
+<div>
+<span class="font-title-sm text-title-sm text-primary block">Cifrado de Extremo a Extremo</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Protección criptográfica activa</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[28px]">how_to_reg</span>
+<div>
+<span class="font-title-sm text-title-sm text-primary block">Identidad Oficial Verificada</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Validación contra bases del Estado</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[28px]">price_check</span>
+<div>
+<span class="font-title-sm text-title-sm text-primary block">Acceso Gratuito a Radicación</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Sin cobros ocultos por ingreso</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+    (function() {
+      const pwdInput = document.getElementById('password');
+      const toggleBtn = document.getElementById('toggle-password-btn');
+      const toggleIcon = document.getElementById('password-visibility-icon');
+      
+      const bar1 = document.getElementById('bar-step-1');
+      const bar2 = document.getElementById('bar-step-2');
+      const bar3 = document.getElementById('bar-step-3');
+      const bar4 = document.getElementById('bar-step-4');
+      const strengthText = document.getElementById('strength-label');
+
+      const ruleLength = document.getElementById('rule-length');
+      const ruleUpper = document.getElementById('rule-upper');
+      const ruleNumber = document.getElementById('rule-number');
+      const ruleSpecial = document.getElementById('rule-special');
+
+      if (toggleBtn && pwdInput) {
+        toggleBtn.addEventListener('click', function() {
+          const isPassword = pwdInput.getAttribute('type') === 'password';
+          pwdInput.setAttribute('type', isPassword ? 'text' : 'password');
+          toggleIcon.textContent = isPassword ? 'visibility_off' : 'visibility';
+        });
+      }
+
+      function updateRuleDisplay(element, satisfied) {
+        const icon = element.querySelector('.material-symbols-outlined');
+        if (satisfied) {
+          icon.textContent = 'check_circle';
+          icon.classList.add('text-primary');
+          icon.classList.remove('text-outline');
+          element.classList.add('text-primary', 'font-medium');
+          element.classList.remove('text-on-surface-variant');
+        } else {
+          icon.textContent = 'radio_button_unchecked';
+          icon.classList.remove('text-primary');
+          icon.classList.add('text-outline');
+          element.classList.remove('text-primary', 'font-medium');
+          element.classList.add('text-on-surface-variant');
+        }
+      }
+
+      if (pwdInput) {
+        pwdInput.addEventListener('input', function(e) {
+          const val = e.target.value;
+          
+          const hasLen = val.length >= 8;
+          const hasUpper = /[A-Z]/.test(val);
+          const hasNum = /[0-9]/.test(val);
+          const hasSpec = /[^A-Za-z0-9]/.test(val);
+
+          updateRuleDisplay(ruleLength, hasLen);
+          updateRuleDisplay(ruleUpper, hasUpper);
+          updateRuleDisplay(ruleNumber, hasNum);
+          updateRuleDisplay(ruleSpecial, hasSpec);
+
+          const score = (hasLen ? 1 : 0) + (hasUpper ? 1 : 0) + (hasNum ? 1 : 0) + (hasSpec ? 1 : 0);
+
+          [bar1, bar2, bar3, bar4].forEach(b => {
+            b.className = 'h-full w-1/4 bg-surface-container rounded-full transition-all duration-300';
+          });
+
+          if (val.length === 0) {
+            strengthText.textContent = 'Fuerza: Incompleta';
+            strengthText.className = 'text-on-surface-variant font-medium';
+          } else if (score <= 1) {
+            bar1.className = 'h-full w-1/4 bg-error rounded-full transition-all duration-300';
+            strengthText.textContent = 'Fuerza: Débil';
+            strengthText.className = 'text-error font-medium';
+          } else if (score === 2) {
+            bar1.className = 'h-full w-1/4 bg-secondary rounded-full transition-all duration-300';
+            bar2.className = 'h-full w-1/4 bg-secondary rounded-full transition-all duration-300';
+            strengthText.textContent = 'Fuerza: Moderada';
+            strengthText.className = 'text-secondary font-medium';
+          } else if (score === 3) {
+            bar1.className = 'h-full w-1/4 bg-primary rounded-full transition-all duration-300';
+            bar2.className = 'h-full w-1/4 bg-primary rounded-full transition-all duration-300';
+            bar3.className = 'h-full w-1/4 bg-primary rounded-full transition-all duration-300';
+            strengthText.textContent = 'Fuerza: Segura';
+            strengthText.className = 'text-primary font-medium';
+          } else if (score === 4) {
+            bar1.className = 'h-full w-1/4 bg-tertiary-container rounded-full transition-all duration-300';
+            bar2.className = 'h-full w-1/4 bg-tertiary-container rounded-full transition-all duration-300';
+            bar3.className = 'h-full w-1/4 bg-tertiary-container rounded-full transition-all duration-300';
+            bar4.className = 'h-full w-1/4 bg-tertiary-container rounded-full transition-all duration-300';
+            strengthText.textContent = 'Fuerza: Excelente y certificada';
+            strengthText.className = 'text-tertiary-container font-semibold';
+          }
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant"><div class="max-w-7xl mx-auto px-6 lg:px-12 py-8 flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col sm:flex-row items-center gap-space-sm text-center sm:text-left"><span class="font-label-sm text-label-sm text-on-surface-variant">© 2025 LexPortal. Infraestructura de Identidad Jurídica Oficial.</span><span class="hidden sm:inline text-outline-variant">•</span><span class="font-label-sm text-label-sm text-on-surface-variant">Sede Electrónica Certificada</span></div><div class="flex flex-wrap items-center justify-center gap-space-md"><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Política de Privacidad</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Términos del Servicio</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Soporte Legal y Normativo</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Accesibilidad</a></div></div></footer></body></html>

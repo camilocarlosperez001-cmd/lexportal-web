@@ -1,0 +1,574 @@
+<!DOCTYPE html><html lang="es" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-container": "#596376",
+          "primary-fixed-dim": "#adc7f7",
+          "on-error-container": "#93000a",
+          "on-secondary-fixed-variant": "#3d4759",
+          "on-background": "#0d1c2e",
+          "surface-container-high": "#dce9ff",
+          "primary-fixed": "#d6e3ff",
+          "on-secondary-fixed": "#121c2c",
+          "surface-variant": "#d4e4fc",
+          "surface": "#f8f9ff",
+          "on-primary-fixed-variant": "#2d476f",
+          "tertiary-container": "#003d3c",
+          "primary": "#002045",
+          "outline": "#74777f",
+          "background": "#f8f9ff",
+          "on-primary-fixed": "#001b3c",
+          "error": "#ba1a1a",
+          "surface-tint": "#455f88",
+          "primary-container": "#1a365d",
+          "surface-container-highest": "#d4e4fc",
+          "tertiary-fixed-dim": "#77d6d3",
+          "surface-dim": "#ccdbf4",
+          "inverse-on-surface": "#eaf1ff",
+          "secondary-container": "#d6e0f6",
+          "secondary-fixed-dim": "#bdc7dc",
+          "secondary": "#555f71",
+          "outline-variant": "#c4c6cf",
+          "inverse-primary": "#adc7f7",
+          "inverse-surface": "#223144",
+          "on-surface-variant": "#43474e",
+          "on-surface": "#0d1c2e",
+          "on-tertiary-container": "#4cadab",
+          "tertiary": "#002625",
+          "on-secondary": "#ffffff",
+          "error-container": "#ffdad6",
+          "tertiary-fixed": "#94f2f0",
+          "surface-container": "#e5eeff",
+          "secondary-fixed": "#d9e3f9",
+          "on-tertiary-fixed": "#00201f",
+          "on-tertiary-fixed-variant": "#00504e",
+          "on-primary": "#ffffff",
+          "on-error": "#ffffff",
+          "on-tertiary": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "on-primary-container": "#86a0cd",
+          "surface-bright": "#f8f9ff",
+          "surface-container-low": "#eff4ff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-xs": "0.25rem",
+          "margin-mobile": "1rem",
+          "space-sm": "0.5rem",
+          "space-xl": "2rem",
+          "space-md": "1rem",
+          "gutter-mobile": "1rem",
+          "gutter": "1.5rem",
+          "margin": "2rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "title-sm": ["Inter"],
+          "body-lg": ["Inter"],
+          "label-md": ["Inter"],
+          "headline-lg-mobile": ["Inter"],
+          "label-caps": ["Inter"],
+          "headline-sm": ["Inter"],
+          "body-md": ["Inter"],
+          "title-md": ["Inter"],
+          "headline-lg": ["Inter"],
+          "label-sm": ["Inter"],
+          "display": ["Inter"],
+          "headline-md": ["Inter"],
+          "body-sm": ["Inter"]
+        },
+        "fontSize": {
+          "title-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "600"}],
+          "body-lg": ["16px", {"lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400"}],
+          "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+          "headline-lg-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600"}],
+          "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600"}],
+          "body-md": ["14px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}],
+          "title-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600"}],
+          "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+          "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+          "display": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "body-sm": ["12px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container"><span class="material-symbols-outlined text-primary text-[24px]">gavel</span><div><span class="font-title-sm text-title-sm text-primary tracking-tight block">LexPortal Admin</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase block">Control Colegial</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs font-label-caps text-label-caps text-on-surface-variant uppercase">Módulos de Auditoría</div></div><nav class="px-space-sm space-y-1 flex flex-col" data-active-classes="bg-primary-container text-on-primary-container font-title-sm rounded-lg"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="bandeja-de-expedientes" href="#"><span class="material-symbols-outlined text-[20px]">folder_supervised</span><span class="">Perfiles</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="registro-de-colegiados" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="">Registro de Colegiados</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="libro-de-resoluciones" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="">Libro de Resoluciones</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="auditoria-de-sistema" href="#"><span class="material-symbols-outlined text-[20px]">policy</span><span class="">Auditoría de Sistema</span></a></nav></div><div class="p-space-md bg-surface-container-low"><div class="p-space-sm rounded-lg bg-surface flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px]">verified_user</span><div><span class="font-label-caps text-label-caps text-on-surface block">eIDAS / Colegial</span><span class="font-body-sm text-body-sm text-on-surface-variant block">Sello Cualificado</span></div></div><div class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></div></div></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative flex items-center w-full bg-surface-container rounded-lg px-space-md py-space-xs"><span class="material-symbols-outlined text-on-surface-variant text-[20px] mr-space-sm">search</span><input class="w-full bg-transparent border-none text-on-surface font-body-md text-body-md placeholder-on-surface-variant focus:outline-none" placeholder="Buscar por n° de expediente, NIF colegiado o CSV..." type="text"></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-high px-space-sm py-1 rounded-full"><span class="material-symbols-outlined text-primary text-[16px]">security</span><span class="font-label-sm text-label-sm text-primary">Auditoría y Validación Documental</span></div><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-full"><span class="w-2 h-2 rounded-full bg-tertiary-container"></span><span class="font-label-sm text-label-sm text-on-surface">Firma eIDAS Activa</span></div><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-all" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="text-right hidden sm:block"><span class="font-title-sm text-title-sm text-on-surface block leading-tight">Dra. M. Santillana</span><span class="font-body-sm text-body-sm text-on-surface-variant block">Oficial de Cumplimiento</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 pt-16 bg-surface px-gutter"><div class="flex flex-col w-full pb-space-xl">
+<!-- Encabezado de página con breadcrumb, SLA y navegación entre expedientes -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<!-- Breadcrumb & Top Bar Navigation -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<a class="hover:text-primary transition-colors" href="#">Back-Office</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Validación de Credenciales</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-title-sm text-title-sm text-primary">Expediente #EXP-2025-08492</span>
+</nav>
+<div class="flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span class="">Anterior</span>
+</button>
+<span class="text-on-surface-variant font-label-caps text-label-caps px-1">42 / 128</span>
+<button class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm shadow-sm transition-all" type="button">
+<span class="">Siguiente</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-1 rounded bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm shadow-sm transition-all ml-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span class="">Descargar legajo completo (PDF auditado)</span>
+</button>
+</div>
+</div>
+<!-- Título Principal y Metadata contextual -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mt-space-xs">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Revisión de Credenciales Profesionales y Colegiatura
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Auditoría legal de acreditación académica y de idoneidad ética disciplinaria para habilitación en LexPortal.
+        </p>
+</div>
+<!-- Badges de Estado y SLA -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          Auditoría en curso: Dra. M. Santillana
+        </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">flag</span>
+          Prioridad Alta
+        </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+          SLA Restante: <strong class="text-on-surface font-semibold ml-0.5">04h 15m</strong>
+</span>
+</div>
+</div>
+</div>
+<!-- Layout Principal de Dos Columnas -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- COLUMNA IZQUIERDA: Datos del Letrado y Visor de Soportes (7 de 12 columnas) -->
+<div class="xl:col-span-7 flex flex-col gap-space-lg">
+<!-- TARJETA 1: Ficha del Solicitante (Solo Lectura) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<!-- Header Ficha -->
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-md">
+<div class="relative">
+<img class="w-16 h-16 rounded-lg object-cover shadow-sm bg-surface-container" data-alt="Professional studio headshot portrait of a sharp Hispanic male attorney named Alejandro Ramos in mid 30s wearing a tailored navy blue suit with subtle pinstripes, crisp white shirt and silk tie, smiling confident and professional against a neutral slate grey corporate architectural background with soft studio rim lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVeCGLkqnz9l0D5levlcc-zuNJtrlsNDvRRjmp9r6YNVqtjk0xZARqgzlKkQjUbqDTLO1-t7itWtcCOgeDGwiXYYth4Rpe7HNG4ex85fWEFIBVjwzhpTMrgagJMZy_A4uk8CA_q9sswSW73CW9-CnIPpgVYOTTbUt6rHGAGSwhyQsAaFK9AQzhOvCr-vkHl-VbBNsXUOJPyd5tVDVQvIOvyBCxh6MHka3-qlslVXnm">
+<span class="absolute -bottom-1 -right-1 bg-tertiary-fixed text-on-tertiary-fixed rounded-full p-0.5 shadow-sm" title="Biometría Facial Cotejada 99.4%">
+<span class="material-symbols-outlined text-[14px] block">verified</span>
+</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h2 class="font-title-md text-title-md text-on-surface">Dr. Alejandro Ramos Morales</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-caps text-label-caps uppercase">
+                  Postulante Activo
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                C.C. 72.849.120 expedida en Barranquilla • Registro Radicado: 23-Oct-2025 09:14 COT
+              </p>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm mt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary-container">mark_email_read</span>
+                  a.ramos@lexcorporativo.co
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-on-surface-variant">phone</span>
+                  +57 (301) 482-9901
+                </span>
+</div>
+</div>
+</div>
+<div class="text-right hidden sm:block">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Matrícula Pretendida</span>
+<span class="font-title-sm text-title-sm text-primary font-bold">CSJ Nº 294.810</span>
+</div>
+</div>
+<!-- Grid de Metadatos Universitarios y Legal Hash -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs bg-surface-container-low rounded-lg p-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Título de Pregrado</span>
+<span class="font-title-sm text-title-sm text-on-surface mt-0.5">Abogado (Grado 2011)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Universidad del Norte (Barranquilla)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Formación Posgradual</span>
+<span class="font-title-sm text-title-sm text-on-surface mt-0.5">Esp. Derecho Laboral y Seg. Social</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pontificia Universidad Javeriana (2015)</span>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between bg-surface-container rounded px-space-sm py-1.5 mt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 font-mono text-body-sm truncate">
+<span class="material-symbols-outlined text-[15px] text-primary">fingerprint</span>
+<span class="">SHA-256 Digest:</span>
+<span class="text-on-surface font-semibold truncate">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+</div>
+<button class="text-primary hover:text-primary-container p-1" title="Copiar hash de integridad" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+</div>
+<!-- TARJETA 2: Documentos y Soportes Adjuntos con Visor Interactivo -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">folder_open</span>
+<h3 class="font-title-md text-title-md text-on-surface">Legajo Probatorio Adjunto (4 Archivos)</h3>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">
+            Protocolo de Integridad RFC 3161
+          </span>
+</div>
+<!-- Pestañas de Archivos Adjuntos -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-xs">
+<!-- Doc 1 Activo -->
+<button class="flex flex-col text-left p-space-xs bg-primary text-on-primary rounded-lg shadow-sm transition-all text-xs" type="button">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">badge</span>
+<span class="font-label-caps text-[10px] text-tertiary-fixed uppercase font-semibold">Activo</span>
+</div>
+<span class="font-title-sm text-title-sm text-on-primary truncate w-full">Cédula &amp; Huella.pdf</span>
+<span class="font-body-sm text-body-sm opacity-80 mt-0.5">1.8 MB • Registraduría</span>
+</button>
+<!-- Doc 2 -->
+<button class="flex flex-col text-left p-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface rounded-lg transition-all text-xs" type="button">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">contact_emergency</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">CSJ</span>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface truncate w-full">Tarj. Profesional.pdf</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">3.2 MB • Anverso/Rev.</span>
+</button>
+<!-- Doc 3 -->
+<button class="flex flex-col text-left p-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface rounded-lg transition-all text-xs" type="button">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">school</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">Notariado</span>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface truncate w-full">Diploma &amp; Acta.pdf</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">4.5 MB • Uninorte</span>
+</button>
+<!-- Doc 4 -->
+<button class="flex flex-col text-left p-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface rounded-lg transition-all text-xs" type="button">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">history_edu</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">Vigente</span>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface truncate w-full">Antecedentes CSJ.pdf</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">920 KB • Certificado</span>
+</button>
+</div>
+<!-- Visor Integrado del Documento Mockup de Alta Fidelidad -->
+<div class="flex flex-col bg-surface-container-low rounded-lg overflow-hidden shadow-inner">
+<!-- Barra de Herramientas del Visor -->
+<div class="flex items-center justify-between px-space-md py-space-xs bg-surface-container text-on-surface font-label-sm text-label-sm">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1 font-semibold text-primary">
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span>
+                Doc #1: Cédula de Ciudadanía y Huella Biometría.pdf
+              </span>
+<span class="bg-surface-container-high text-primary px-2 py-0.5 rounded text-[11px] font-mono">Pág. 1 de 2</span>
+</div>
+<!-- Controles zoom y pantalla completa -->
+<div class="flex items-center gap-1">
+<button class="p-1 hover:bg-surface-container-high rounded text-on-surface-variant" title="Alejar" type="button">
+<span class="material-symbols-outlined text-[18px]">zoom_out</span>
+</button>
+<span class="text-xs font-mono px-1">100%</span>
+<button class="p-1 hover:bg-surface-container-high rounded text-on-surface-variant" title="Acercar" type="button">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+</button>
+<button class="p-1 hover:bg-surface-container-high rounded text-on-surface-variant" title="Rotar 90°" type="button">
+<span class="material-symbols-outlined text-[18px]">rotate_right</span>
+</button>
+<div class="w-px h-4 bg-outline-variant mx-1"></div>
+<button class="flex items-center gap-1 px-2 py-1 hover:bg-surface-container-high rounded text-primary font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+<span class="">Ventana completa</span>
+</button>
+</div>
+</div>
+<!-- Lienzo / Canvas del Documento con Sellos e Integridad -->
+<div class="relative p-space-lg bg-surface-container-lowest min-h-[380px] flex items-center justify-center overflow-hidden">
+<!-- Marca de agua diagonal de auditoría -->
+<div class="absolute inset-0 pointer-events-none flex items-center justify-center select-none opacity-5 rotate-[-25deg]">
+<span class="font-display text-display uppercase tracking-widest text-primary font-black text-center leading-tight">
+                LEXPORTAL • COTEJO OFICIAL • REVISIÓN COLEGIAL
+              </span>
+</div>
+<!-- Contenedor del documento legal simulado -->
+<div class="w-full max-w-lg bg-surface p-space-lg rounded shadow-md relative flex flex-col gap-space-md">
+<!-- Sello digital superior -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[28px]">shield</span>
+<div>
+<span class="font-title-sm text-title-sm text-primary uppercase block leading-none">República de Colombia</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase block">Registraduría Nacional del Estado Civil</span>
+</div>
+</div>
+<div class="text-right">
+<span class="px-2 py-1 bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps uppercase rounded font-bold">
+                    Autenticado por API RNEC
+                  </span>
+</div>
+</div>
+<!-- Simulación de Cédula y datos visuales cotejados -->
+<div class="grid grid-cols-12 gap-space-sm items-center bg-surface-container-lowest p-space-sm rounded">
+<div class="col-span-4 flex flex-col items-center">
+<img class="w-24 h-28 object-cover rounded shadow-inner filter grayscale contrast-125" data-alt="Monochrome official national identity biometric passport photograph for legal credentials of a 35 year old male lawyer centered headshot frontal pose neutral lighting high fidelity registration scan." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGzA0N4L3dFlbl6d6iCACulzVFs55_lSHyuTF6_hXcReUrjcTX9e-AuYdZA6eYuCb2H5zXqrmBG1A0pS4gGi05UcqCOejydmo5z7g3-pIOkm8Kj9f5c5In5w0FYYzk-RR8FbItMmv5l27_5EsqPFMmjq6yhbNFV1gaxe8FfduyzbuMftuYBAeIGwIcw7iYm3e6IAQLIWOrERgaRyYCcPclYs9cOYJrdCqU4j3VCag-">
+<div class="mt-2 flex items-center gap-1 text-[10px] text-tertiary-fixed-variant font-mono font-bold">
+<span class="material-symbols-outlined text-[12px]">fingerprint</span>
+                    HUELLA WSQ OK
+                  </div>
+</div>
+<div class="col-span-8 flex flex-col gap-1 text-xs">
+<div class="font-mono text-[10px] text-on-surface-variant">NÚMERO DE IDENTIFICACIÓN PERSONAL (NUIP)</div>
+<div class="font-title-md text-title-md text-on-surface tracking-wider font-bold">72.849.120</div>
+<div class="mt-1 font-mono text-[10px] text-on-surface-variant">APELLIDOS Y NOMBRES</div>
+<div class="font-title-sm text-title-sm text-on-surface uppercase font-semibold">RAMOS MORALES, ALEJANDRO</div>
+<div class="grid grid-cols-2 gap-1 mt-1 font-mono text-[11px] text-on-surface-variant">
+<div class="">LUGAR EXP: <span class="text-on-surface font-semibold">B/QUILLA</span></div>
+<div class="">ESTADO: <span class="text-on-surface font-semibold">VIGENTE</span></div>
+</div>
+</div>
+</div>
+<!-- Sello notarial y firma de tiempo RFC 3161 -->
+<div class="flex items-center justify-between pt-space-xs text-[11px] text-on-surface-variant font-mono bg-surface-container-low px-space-sm py-1.5 rounded">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">schedule</span>
+                  TSA: 2025-10-23T14:14:02.810Z
+                </span>
+<span class="flex items-center gap-1 font-bold text-primary">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+                  CSV: 49AF-BF4C-8996-FB92
+                </span>
+</div>
+</div>
+</div>
+<!-- Pie del Visor con resumen de integridad técnica -->
+<div class="px-space-md py-space-xs bg-surface-container-high flex flex-wrap items-center justify-between text-xs text-on-surface font-mono">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary-container">verified_user</span>
+              Validación de firma digital PAdES-LTV: <strong class="text-on-surface">VÁLIDA Y CONFIABLE</strong>
+</span>
+<span class="text-on-surface-variant text-[11px]">Metadatos Exif/PDF desinfectados sin esteganografía</span>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMNA DERECHA: Formulario de Resolución y Dictamen Administrativo (5 de 12 columnas) -->
+<div class="xl:col-span-5 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col gap-space-md">
+<!-- Encabezado del Formulario de Dictamen -->
+<div class="pb-space-xs">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="material-symbols-outlined text-primary text-[24px]">gavel</span>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">
+              Dictamen de Verificación y Resolución Colegial
+            </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Este dictamen quedará firmado criptográficamente en el registro inmutable de auditoría del colegio bajo estándares eIDAS / ENS.
+          </p>
+</div>
+<!-- Formulario Interactivo -->
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault();">
+<!-- Campo 1: Fuente Consultada -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between" for="fuente-consulta">
+<span class="">Fuente Oficial Consultada *</span>
+<span class="font-label-caps text-label-caps text-primary uppercase">Cotejo Externo</span>
+</label>
+<div class="relative">
+<select class="w-full h-10 px-space-md bg-surface border-0 rounded text-on-surface font-body-md text-body-md shadow-sm appearance-none focus:outline-none focus:bg-surface-container-low transition-all" id="fuente-consulta">
+<option selected="" value="sirna">Registro Nacional de Abogados (SIRNA - Rama Judicial)</option>
+<option value="csj">Consejo Superior de la Judicatura (Unidad de Registro)</option>
+<option value="procuraduria">Base de Datos de Antecedentes Procuraduría / Personería</option>
+<option value="notarial">Verificación Notarial Directa (Ventanilla Única Notarial)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant pointer-events-none text-[20px]">
+                arrow_drop_down
+              </span>
+</div>
+</div>
+<!-- Campo Complementario: Código de Verificación / Radicado -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="codigo-verif">
+              Código de Verificación / Radicado de Consulta Externa *
+            </label>
+<div class="relative flex items-center">
+<input class="w-full h-10 pl-space-md pr-10 bg-surface rounded text-on-surface font-mono text-body-md shadow-sm focus:outline-none focus:bg-surface-container-low transition-all" id="codigo-verif" placeholder="ej. SIRNA-VERIF-2025-99384" type="text" value="SIRNA-VERIF-2025-99384">
+<span class="material-symbols-outlined absolute right-3 text-tertiary-fixed-variant text-[20px]" title="Formato oficial válido">
+                check_circle
+              </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              Constancia de consulta pública generada el 23 de octubre de 2025.
+            </span>
+</div>
+<!-- Campo 2: Área de Texto para Fundamentación -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="resultado-fundamentacion">
+                Resultado y Fundamentación del Cotejo *
+              </label>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase font-mono" id="char-counter">
+                248 / 1000 caracteres
+              </span>
+</div>
+<!-- Chips de Inserción Rápida -->
+<div class="flex flex-wrap items-center gap-1.5 mb-1">
+<button class="px-2 py-0.5 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[13px]">add</span>
+                Sin antecedentes disciplinarios
+              </button>
+<button class="px-2 py-0.5 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[13px]">add</span>
+                Documento coincide al 100%
+              </button>
+<button class="px-2 py-0.5 rounded bg-surface-container hover:bg-surface-container-high text-error font-label-sm text-label-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[13px]">add</span>
+                Falta apostilla/sello legible
+              </button>
+</div>
+<textarea class="w-full p-space-md bg-surface rounded text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:bg-surface-container-low transition-all resize-y leading-relaxed" id="resultado-fundamentacion" placeholder="Indique con claridad las comprobaciones realizadas..." rows="4">Se constata vigencia plena de la matrícula profesional CSJ 294.810 a nombre del Dr. Alejandro Ramos Morales. No registra sanciones disciplinarias vigentes, ni suspensiones activas en los últimos 5 años. Acta de grado cotejada y convalidada con el registro académico institucional.</textarea>
+</div>
+<!-- Campo 3: Tarjetas Seleccionables de Decisión (Radio Group) -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">
+              Sentido de la Resolución *
+            </span>
+<div class="flex flex-col gap-2">
+<!-- Opción 1: Aprobar Credenciales (Default Seleccionado) -->
+<label class="relative flex items-start gap-space-md p-space-md rounded-lg bg-surface-container-high cursor-pointer shadow-sm transition-all hover:bg-surface-variant">
+<input checked="" class="mt-1 w-4 h-4 text-primary focus:ring-0 accent-primary" name="sentido-resolucion" type="radio" value="aprobar">
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-primary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+                      Aprobar Credenciales
+                    </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary font-label-caps text-label-caps uppercase font-bold">
+                      Habilitación Inmediata
+                    </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    Habilita perfil público inmediato y asignación de sello colegial verificado con emisión de token eIDAS.
+                  </p>
+</div>
+</label>
+<!-- Opción 2: Pedir Correcciones -->
+<label class="relative flex items-start gap-space-md p-space-md rounded-lg bg-surface hover:bg-surface-container cursor-pointer shadow-sm transition-all">
+<input class="mt-1 w-4 h-4 text-primary focus:ring-0 accent-primary" name="sentido-resolucion" type="radio" value="correcciones">
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-on-secondary-container">warning</span>
+                      Pedir Correcciones
+                    </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps uppercase font-bold">
+                      Plazo: 5 Días
+                    </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    Solicita al abogado subsanar anexos ilegibles, certificados desactualizados o información inconsistente.
+                  </p>
+</div>
+</label>
+<!-- Opción 3: Rechazar Solicitud -->
+<label class="relative flex items-start gap-space-md p-space-md rounded-lg bg-surface hover:bg-surface-container cursor-pointer shadow-sm transition-all">
+<input class="mt-1 w-4 h-4 text-primary focus:ring-0 accent-primary" name="sentido-resolucion" type="radio" value="rechazar">
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-error font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+                      Rechazar Solicitud
+                    </span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-caps text-label-caps uppercase font-bold">
+                      Inhabilitante
+                    </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    Invalida y archiva el expediente por incongruencias graves, falsedad documental o sanciones disciplinarias vigentes.
+                  </p>
+</div>
+</label>
+</div>
+</div>
+<!-- Campo 4: Checkbox de Juramento Funcional Obligatorio -->
+<div class="p-space-md bg-surface-container-low rounded-lg shadow-sm">
+<label class="flex items-start gap-space-sm cursor-pointer select-none">
+<input checked="" class="mt-1 w-4 h-4 text-primary rounded accent-primary focus:ring-0" required="" type="checkbox">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">
+                  Declaración de Conformidad Notarial y Deontológica *
+                </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Declaro bajo juramento funcional que he contrastado exhaustivamente los documentos adjuntos con las bases públicas oficiales y asumo la fe pública delegada por el Colegio.
+                </span>
+</div>
+</label>
+</div>
+<!-- Barra de Acciones Final -->
+<div class="pt-space-xs flex items-center justify-between gap-space-md">
+<button class="px-space-md py-2.5 rounded bg-surface hover:bg-surface-container text-on-surface font-label-md text-label-md shadow-sm transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">drafts</span>
+<span class="">Guardar Borrador</span>
+</button>
+<button class="px-space-lg py-2.5 rounded bg-primary hover:bg-primary-container text-on-primary font-title-sm text-title-sm shadow-md transition-all flex items-center gap-2 group" type="submit">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed group-hover:scale-110 transition-transform">
+                verified
+              </span>
+<span class="">Guardar y Emitir Resolución</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Tarjeta Informativa de Registro de Trazabilidad Rápida -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">history</span>
+</div>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface block leading-tight">Auditoría Previa de Entrada</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Entrada OCR validada: Score 98.7%</span>
+</div>
+</div>
+<a class="font-label-sm text-label-sm text-primary hover:underline font-semibold flex items-center gap-0.5" href="#">
+<span class="">Ver bitácora</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interacción: contador de caracteres dinámico
+  const textarea = document.getElementById('resultado-fundamentacion');
+  const counter = document.getElementById('char-counter');
+  if (textarea && counter) {
+    textarea.addEventListener('input', function() {
+      const len = this.value.length;
+      counter.textContent = `${len} / 1000 caracteres`;
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] py-space-md px-gutter mt-auto"><div class="w-full flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-on-surface-variant text-[18px]">enhanced_encryption</span><span class="font-label-sm text-label-sm text-on-surface-variant">Cifrado Notarial y Colegial SHA-256</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-on-surface-variant text-[18px]">fact_check</span><span class="font-label-sm text-label-sm text-on-surface-variant">Sello de Tiempo RFC 3161</span></div></div><div class="text-center md:text-right"><span class="font-body-sm text-body-sm text-on-surface-variant block">LexPortal Back-Office Colegial © 2024 Consejo General Colegial. Todos los derechos reservados.</span><span class="font-label-caps text-label-caps text-on-secondary-container uppercase block">Cumplimiento ENS Nivel Alto • RGPD / LOPDGDD Auditado</span></div></div></footer></div>
+
+</body></html>

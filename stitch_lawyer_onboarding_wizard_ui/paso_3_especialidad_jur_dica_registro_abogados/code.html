@@ -1,0 +1,274 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-surface-variant":"#43474e","on-secondary-fixed-variant":"#3d4759","tertiary-container":"#003d3c","on-tertiary":"#ffffff","primary":"#002045","on-error":"#ffffff","tertiary":"#002625","on-background":"#0d1c2e","primary-fixed-dim":"#adc7f7","outline":"#74777f","inverse-on-surface":"#eaf1ff","on-tertiary-container":"#4cadab","on-primary-fixed-variant":"#2d476f","secondary-fixed":"#d9e3f9","on-secondary-container":"#596376","on-secondary-fixed":"#121c2c","on-primary-container":"#86a0cd","inverse-primary":"#adc7f7","primary-fixed":"#d6e3ff","on-error-container":"#93000a","on-secondary":"#ffffff","surface-container-low":"#eff4ff","on-surface":"#0d1c2e","secondary-container":"#d6e0f6","surface-dim":"#ccdbf4","surface-variant":"#d4e4fc","surface-container-lowest":"#ffffff","surface-container-highest":"#d4e4fc","on-primary":"#ffffff","on-tertiary-fixed-variant":"#00504e","secondary-fixed-dim":"#bdc7dc","error-container":"#ffdad6","tertiary-fixed":"#94f2f0","surface-bright":"#f8f9ff","secondary":"#555f71","on-tertiary-fixed":"#00201f","surface-container-high":"#dce9ff","background":"#f8f9ff","primary-container":"#1a365d","surface-container":"#e5eeff","surface-tint":"#455f88","inverse-surface":"#223144","error":"#ba1a1a","on-primary-fixed":"#001b3c","outline-variant":"#c4c6cf","tertiary-fixed-dim":"#77d6d3","surface":"#f8f9ff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","margin-mobile":"1rem","space-md":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-xl":"2rem","gutter":"1.5rem","margin":"2rem"},"fontFamily":{"headline-lg":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"headline-md":["Inter"],"display":["Inter"],"title-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"title-sm":["Inter"],"label-caps":["Inter"],"body-sm":["Inter"],"headline-sm":["Inter"],"headline-lg-mobile":["Inter"]},"fontSize":{"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"title-sm":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="LexPortal Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VzfnUAQjz4EvzbZtSdZp1LqEzrdiMGsoLI3z9tofoLVOH-gGDye186E08wD9YZmxB7w_oECNgJ0IYmjN1ncLV1nvsdLryhmff5-nnDFmp4PlxFiSvf2sjewzXsgCAcxwvYaviaFsk237VmqNH7h6K11Yd7bKAnck4sxM4PC45-8Jw0GT4eTAXdu4yiyTiWz2pYvIIe2FzYihsEiU4GWJJthmmH3xab_u3sjPge6q6jQA"><span class="font-title-sm text-title-sm text-primary tracking-tight hidden sm:inline">LexPortal</span><span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps uppercase">Portal para Abogados</span></div><div class="flex items-center gap-space-lg"><div class="hidden lg:flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-tertiary-container">lock</span><span>Conexión Segura cifrada de 256 bits</span></div><div class="hidden md:flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px]">help</span><span>¿Necesitas ayuda?</span><a class="text-primary hover:text-on-primary-container font-label-sm text-label-sm transition-colors" href="mailto:contacto@lexportal.jur">contacto@lexportal.jur</a></div><nav class="flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary"><a aria-current="page" class="font-label-md transition-colors px-3 py-1.5 rounded bg-primary-container text-on-primary" data-path="registro-abogados" href="#">Registro</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors px-3 py-1.5 rounded" data-path="cerrar-sesion" href="#">Guardar y salir</a></nav><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)] flex-1 flex flex-col justify-between"><div class="flex flex-col w-full">
+<div class="w-full max-w-5xl mx-auto px-6 py-8 md:py-12 flex flex-col gap-8">
+<!-- Stepper (Chakra UI Modern Legal Stepper) -->
+<nav aria-label="Progreso del Registro" class="w-full">
+<div class="relative flex items-center justify-between">
+<!-- Connecting Line Background -->
+<div class="absolute left-6 right-6 top-1/2 -translate-y-1/2 h-0.5 bg-surface-container-highest -z-0"></div>
+<!-- Progress Fill (50% complete to Step 3) -->
+<div class="absolute left-6 w-1/2 top-1/2 -translate-y-1/2 h-0.5 bg-primary-container transition-all duration-300 -z-0"></div>
+<!-- Step 1: Completed -->
+<div class="relative z-10 flex flex-col items-center gap-2 group">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<span class="hidden sm:inline-block font-label-sm text-label-sm text-on-surface-variant font-medium">Credenciales</span>
+</div>
+<!-- Step 2: Completed -->
+<div class="relative z-10 flex flex-col items-center gap-2 group">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<span class="hidden sm:inline-block font-label-sm text-label-sm text-on-surface-variant font-medium">Perfil Público</span>
+</div>
+<!-- Step 3: Active / En Proceso -->
+<div class="relative z-10 flex flex-col items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md ring-4 ring-primary-fixed">
+<span class="font-title-sm text-title-sm text-on-primary">3</span>
+</div>
+<span class="hidden sm:inline-block font-title-sm text-title-sm text-primary font-semibold">Especialidad Jurídica</span>
+</div>
+<!-- Step 4: Inactive -->
+<div class="relative z-10 flex flex-col items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest text-outline border-2 border-outline-variant flex items-center justify-center">
+<span class="font-label-sm text-label-sm text-outline">4</span>
+</div>
+<span class="hidden sm:inline-block font-label-sm text-label-sm text-outline">Verificación</span>
+</div>
+<!-- Step 5: Inactive -->
+<div class="relative z-10 flex flex-col items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest text-outline border-2 border-outline-variant flex items-center justify-center">
+<span class="font-label-sm text-label-sm text-outline">5</span>
+</div>
+<span class="hidden sm:inline-block font-label-sm text-label-sm text-outline">Confirmación</span>
+</div>
+</div>
+</nav>
+<!-- Main Content Card -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-6 sm:p-10 flex flex-col gap-8">
+<!-- Section Header -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps uppercase">Paso 3 de 5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">• Configuración del Catálogo</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">Tus servicios</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+          Selecciona las ramas del derecho y la tipología de casos en los que tienes mayor experiencia litigiosa o de consultoría especializada.
+        </p>
+</div>
+<!-- Selectors Section (Chakra-style Input Stacks) -->
+<div class="bg-surface-container-low rounded-xl p-6 sm:p-7 flex flex-col gap-6">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">add_circle</span>
+<h2 class="font-title-md text-title-md text-primary font-semibold">Añadir nueva especialidad</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant hidden md:inline">Campos obligatorios *</span>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-12 gap-4 items-end" id="specialty-form" onsubmit="event.preventDefault(); window.addSpecialty();">
+<!-- Área Jurídica Select -->
+<div class="md:col-span-5 flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium flex items-center gap-1" for="area-select">
+              Área Jurídica <span class="text-error">*</span>
+</label>
+<div class="relative">
+<select class="w-full h-11 pl-3.5 pr-10 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md appearance-none focus:outline-none focus:ring-2 focus:ring-primary-container shadow-sm transition" id="area-select" required="">
+<option disabled="" selected="" value="">Selecciona un área...</option>
+<option value="Derecho Laboral">Derecho Laboral</option>
+<option value="Derecho Civil y Familia">Derecho Civil y Familia</option>
+<option value="Derecho Penal">Derecho Penal</option>
+<option value="Derecho Comercial y Corporativo">Derecho Comercial y Corporativo</option>
+<option value="Derecho Tributario">Derecho Tributario</option>
+<option value="Derecho Administrativo">Derecho Administrativo</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Tipo de Caso Select -->
+<div class="md:col-span-5 flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium flex items-center gap-1" for="case-select">
+              Tipo de Caso <span class="text-error">*</span>
+</label>
+<div class="relative">
+<select class="w-full h-11 pl-3.5 pr-10 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md appearance-none focus:outline-none focus:ring-2 focus:ring-primary-container shadow-sm transition" id="case-select" required="">
+<option disabled="" selected="" value="">Selecciona tipología de caso...</option>
+<option value="Despido injustificado">Despido injustificado</option>
+<option value="Acoso laboral">Acoso laboral</option>
+<option value="Liquidación de prestaciones">Liquidación de prestaciones</option>
+<option value="Accidentes de trabajo">Accidentes de trabajo</option>
+<option value="Divorcio contencioso">Divorcio contencioso</option>
+<option value="Herencias y sucesiones">Herencias y sucesiones</option>
+<option value="Contratos de arrendamiento">Contratos de arrendamiento</option>
+<option value="Constitución de sociedades">Constitución de sociedades</option>
+<option value="Auditoría tributaria y litigio">Auditoría tributaria y litigio</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Add Button (Chakra Button Action) -->
+<div class="md:col-span-2">
+<button class="w-full h-11 px-4 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-medium hover:bg-primary-container transition-colors shadow-sm flex items-center justify-center gap-1.5 focus:outline-none focus:ring-2 focus:ring-primary-fixed" type="submit">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Agregar</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Selected Tags / Chips Area (Chakra Tag / Wrap Container) -->
+<div class="flex flex-col gap-4">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">bookmarks</span>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">
+              Especialidades y tipos de casos seleccionados
+            </h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps font-semibold" id="counter-badge">
+              5 agregados
+            </span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Límite recomendado: 8</span>
+</div>
+<!-- Wrap Container for interactive Tags -->
+<div class="bg-surface-container-low rounded-xl p-5 md:p-6 min-h-[140px] flex flex-col justify-between gap-4">
+<div class="flex flex-wrap gap-2.5 items-center" id="tags-wrapper">
+<!-- Tag 1 -->
+<span class="specialty-tag inline-flex items-center gap-2 pl-3 pr-2 py-1.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-md text-label-md font-medium shadow-sm transition hover:bg-secondary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span>Derecho Laboral <span class="text-on-secondary-container font-normal">•</span> Despido injustificado</span>
+<button class="w-5 h-5 rounded-full flex items-center justify-center text-on-secondary-container hover:bg-surface-container-highest hover:text-on-surface focus:outline-none transition" onclick="window.removeTag(this)" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</span>
+<!-- Tag 2 -->
+<span class="specialty-tag inline-flex items-center gap-2 pl-3 pr-2 py-1.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-md text-label-md font-medium shadow-sm transition hover:bg-secondary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span>Derecho Laboral <span class="text-on-secondary-container font-normal">•</span> Liquidación de prestaciones</span>
+<button class="w-5 h-5 rounded-full flex items-center justify-center text-on-secondary-container hover:bg-surface-container-highest hover:text-on-surface focus:outline-none transition" onclick="window.removeTag(this)" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</span>
+<!-- Tag 3 -->
+<span class="specialty-tag inline-flex items-center gap-2 pl-3 pr-2 py-1.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-md text-label-md font-medium shadow-sm transition hover:bg-secondary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span>Derecho Laboral <span class="text-on-secondary-container font-normal">•</span> Acoso laboral</span>
+<button class="w-5 h-5 rounded-full flex items-center justify-center text-on-secondary-container hover:bg-surface-container-highest hover:text-on-surface focus:outline-none transition" onclick="window.removeTag(this)" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</span>
+<!-- Tag 4 -->
+<span class="specialty-tag inline-flex items-center gap-2 pl-3 pr-2 py-1.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-md text-label-md font-medium shadow-sm transition hover:bg-secondary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span>Derecho Civil <span class="text-on-secondary-container font-normal">•</span> Contratos de arrendamiento</span>
+<button class="w-5 h-5 rounded-full flex items-center justify-center text-on-secondary-container hover:bg-surface-container-highest hover:text-on-surface focus:outline-none transition" onclick="window.removeTag(this)" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</span>
+<!-- Tag 5 -->
+<span class="specialty-tag inline-flex items-center gap-2 pl-3 pr-2 py-1.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-md text-label-md font-medium shadow-sm transition hover:bg-secondary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span>Derecho Comercial <span class="text-on-secondary-container font-normal">•</span> Constitución de sociedades</span>
+<button class="w-5 h-5 rounded-full flex items-center justify-center text-on-secondary-container hover:bg-surface-container-highest hover:text-on-surface focus:outline-none transition" onclick="window.removeTag(this)" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</span>
+</div>
+<!-- Recommendation Note with subtle visual accent -->
+<div class="flex items-start gap-2 pt-3 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">info</span>
+<span>Puedes agregar hasta 8 tipos de casos para maximizar la precisión en el emparejamiento con clientes y expedientes judiciales compatibles.</span>
+</div>
+</div>
+</div>
+<!-- Quick Guidance & Confidence Indicator -->
+<div class="bg-surface-container rounded-xl p-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div>
+<h4 class="font-title-sm text-title-sm text-on-surface font-semibold">Validación de Cédula y Competencia</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Las materias elegidas requerirán el soporte documental de acreditación en el siguiente paso de Verificación.</p>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 self-end md:self-center">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Algoritmo de asignación activo</span>
+</div>
+</div>
+</div>
+<!-- Wizard Navigation Bar (Bottom Actions) -->
+<footer class="w-full bg-surface-container-lowest rounded-xl shadow-sm px-6 py-4 flex items-center justify-between">
+<!-- Back Button -->
+<button class="h-11 px-5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container transition-colors shadow-sm flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-outline-variant" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Atrás</span>
+</button>
+<!-- Next Action Stack -->
+<div class="flex items-center gap-3">
+<button class="hidden sm:inline-flex h-11 px-4 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">
+          Guardar borrador
+        </button>
+<button class="h-11 px-7 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-colors shadow-sm flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-primary-fixed" type="button">
+<span>Siguiente</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</footer>
+</div>
+</div>
+<script>
+  window.updateTagCounter = function() {
+    const container = document.getElementById('tags-wrapper');
+    const badge = document.getElementById('counter-badge');
+    if (!container || !badge) return;
+    const count = container.querySelectorAll('.specialty-tag').length;
+    badge.textContent = `${count} agregado${count === 1 ? '' : 's'}`;
+  };
+
+  window.removeTag = function(btn) {
+    const tag = btn.closest('.specialty-tag');
+    if (tag) {
+      tag.remove();
+      window.updateTagCounter();
+    }
+  };
+
+  window.addSpecialty = function() {
+    const areaSelect = document.getElementById('area-select');
+    const caseSelect = document.getElementById('case-select');
+    const tagsWrapper = document.getElementById('tags-wrapper');
+
+    if (!areaSelect.value || !caseSelect.value) return;
+
+    const currentCount = tagsWrapper.querySelectorAll('.specialty-tag').length;
+    if (currentCount >= 8) {
+      alert('Has alcanzado el límite máximo de 8 tipos de casos recomendados.');
+      return;
+    }
+
+    const tagEl = document.createElement('span');
+    tagEl.className = 'specialty-tag inline-flex items-center gap-2 pl-3 pr-2 py-1.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-md text-label-md font-medium shadow-sm transition hover:bg-secondary-fixed';
+    
+    tagEl.innerHTML = `
+      <span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+      <span>${areaSelect.value} <span class="text-on-secondary-container font-normal">•</span> ${caseSelect.value}</span>
+      <button type="button" onclick="window.removeTag(this)" class="w-5 h-5 rounded-full flex items-center justify-center text-on-secondary-container hover:bg-surface-container-highest hover:text-on-surface focus:outline-none transition">
+        <span class="material-symbols-outlined text-[14px]">close</span>
+      </button>
+    `;
+
+    tagsWrapper.appendChild(tagEl);
+    window.updateTagCounter();
+
+    // Reset selects
+    areaSelect.selectedIndex = 0;
+    caseSelect.selectedIndex = 0;
+  };
+</script><footer class="w-full bg-surface-container-low py-space-lg"><div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-space-md"><p class="text-on-surface-variant font-body-sm text-body-sm">© 2025 LexPortal Legal Technologies. Todos los derechos reservados.</p><div class="flex items-center gap-space-lg text-on-surface-variant font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" data-path="politicas-privacidad" href="#">Políticas de Privacidad</a><a class="hover:text-on-surface transition-colors" data-path="terminos-legales" href="#">Términos Legales</a><a class="hover:text-on-surface transition-colors" data-path="soporte" href="#">Soporte</a></div></div></footer></main></body></html>

@@ -1,0 +1,1 @@
+Select * from cuentas c Where c.id not in (select cuenta_id from perfiles_abogados);

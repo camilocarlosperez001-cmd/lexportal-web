@@ -1,0 +1,691 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"surface-bright":"#f8f9ff","primary-container":"#1a365d","inverse-primary":"#adc7f7","inverse-surface":"#223144","on-background":"#0d1c2e","on-tertiary-container":"#4cadab","on-error":"#ffffff","surface-container":"#e5eeff","secondary":"#555f71","primary":"#002045","surface-container-low":"#eff4ff","on-primary-fixed-variant":"#2d476f","background":"#f8f9ff","on-surface-variant":"#43474e","error-container":"#ffdad6","secondary-fixed":"#d9e3f9","primary-fixed":"#d6e3ff","surface-tint":"#455f88","surface-container-highest":"#d4e4fc","inverse-on-surface":"#eaf1ff","outline":"#74777f","surface":"#f8f9ff","on-secondary-fixed":"#121c2c","on-secondary":"#ffffff","on-surface":"#0d1c2e","on-primary-container":"#86a0cd","tertiary-fixed":"#94f2f0","on-primary-fixed":"#001b3c","on-secondary-fixed-variant":"#3d4759","surface-variant":"#d4e4fc","tertiary":"#002625","on-secondary-container":"#596376","surface-dim":"#ccdbf4","on-error-container":"#93000a","secondary-container":"#d6e0f6","primary-fixed-dim":"#adc7f7","on-tertiary":"#ffffff","outline-variant":"#c4c6cf","secondary-fixed-dim":"#bdc7dc","surface-container-high":"#dce9ff","on-tertiary-fixed":"#00201f","on-primary":"#ffffff","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#00504e","tertiary-container":"#003d3c","error":"#ba1a1a","tertiary-fixed-dim":"#77d6d3"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin":"2rem","space-sm":"0.5rem","margin-mobile":"1rem","space-md":"1rem","space-lg":"1.5rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-xl":"2rem","gutter":"1.5rem"},"fontFamily":{"title-md":["Inter"],"label-sm":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Inter"],"body-sm":["Inter"],"label-md":["Inter"],"body-md":["Inter"],"display":["Inter"],"headline-sm":["Inter"],"title-sm":["Inter"],"headline-lg":["Inter"],"headline-md":["Inter"],"label-caps":["Inter"]},"fontSize":{"title-md":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"600"}],"title-sm":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"600"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[22px]">balance</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-primary tracking-tight font-bold">LexPortal</span><span class="font-label-caps text-label-caps text-secondary uppercase bg-surface-container px-space-xs py-0.5 rounded">Trust</span></div><span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-none">Entorno Colegiado Seguro</span></div></div><nav class="hidden xl:flex items-center gap-space-xs bg-surface-container-low p-space-xs rounded-lg" data-active-classes="bg-surface-container text-primary font-title-sm font-semibold"><a class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="panel-principal-solicitudes" href="#">Panel Principal / Solicitudes</a><a class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="mis-casos" href="#">Mis Casos</a><a class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="expedientes" href="#">Expedientes</a><a class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="agenda-citas" href="#">Agenda &amp; Citas</a></nav></div><div class="flex items-center gap-space-md"><button aria-label="Notificaciones Judiciales" class="relative w-10 h-10 rounded-lg bg-surface-container-lowest hover:bg-surface-container transition-colors flex items-center justify-center text-on-surface-variant hover:text-on-surface shadow-[0_1px_3px_0_rgba(0,0,0,0.05)]" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary"></span></button><div class="flex items-center gap-space-md pl-space-md py-space-xs bg-surface-container-lowest rounded-lg shadow-[0_1px_3px_0_rgba(0,0,0,0.05)]"><div class="flex flex-col text-right hidden sm:flex"><div class="flex items-center justify-end gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary-container"></span><span class="font-label-md text-label-md text-primary font-semibold">Dra. Valentina Restrepo</span></div><span class="font-label-sm text-label-sm text-secondary">Colegiada Activa · N° 44.892</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-160px)]"><div class="flex flex-col w-full">
+<!-- Sub-header / Command Bar Area -->
+<section class="w-full px-margin py-space-xl bg-surface">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-full text-primary font-label-caps text-label-caps tracking-wider uppercase">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+          Buzón Central de Admisiones Jurídicas
+        </div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">
+          Gestión de Solicitudes de Contacto
+        </h1>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+          Revisa, evalúa la viabilidad jurídica preliminar y formaliza respuesta a los ciudadanos asignados a tu despacho bajo reserva legal de secreto profesional y cadena de custodia documental.
+        </p>
+</div>
+<!-- Quick Session Badge / Protocol Status -->
+<div class="flex items-center gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">verified</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase block">Firma Electrónica Activa</span>
+<span class="font-title-sm text-title-sm text-primary">Token Notarial #VAL-9921-EU</span>
+<span class="font-body-sm text-body-sm text-tertiary-container block">Cifrado de extremo a extremo habilitado</span>
+</div>
+</div>
+</div>
+<!-- KPI Metric Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mt-space-xl">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider block mb-1">Pendientes de revisión</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display text-display text-primary font-bold">04</span>
+<span class="font-label-sm text-label-sm text-on-error-container bg-error-container px-space-xs py-0.5 rounded-full font-semibold">Atención requerida</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">inbox</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span>Tiempo crítico: &lt; 4 hrs</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">3 prioritarias</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 75%"></div>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider block mb-1">Tiempo medio de respuesta</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display text-display text-primary font-bold">1h 45m</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-fixed-variant bg-tertiary-fixed px-space-xs py-0.5 rounded-full font-semibold">Excelente</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">timer</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span>Promedio del colegio: 5h 12m</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">-66% vs media</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-tertiary-container h-full rounded-full" style="width: 92%"></div>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider block mb-1">Aceptadas este mes</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display text-display text-primary font-bold">18</span>
+<span class="font-label-sm text-label-sm text-secondary">casos radicados</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">assignment_turned_in</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span>+4 respecto al mes anterior</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">100% formalizados</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 82%"></div>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider block mb-1">Tasa de viabilidad</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display text-display text-primary font-bold">88%</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-fixed-variant bg-tertiary-fixed px-space-xs py-0.5 rounded-full font-semibold">Alta calidad</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">monitoring</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span>Filtro previo algorítmico</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">12% orientados</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 88%"></div>
+</div>
+</div>
+</div>
+<!-- Filter & Search Command Bar -->
+<div class="mt-space-xl bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-secondary text-[20px]">search</span>
+<input class="w-full h-10 pl-11 pr-space-md rounded-lg bg-surface text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-low transition-colors" placeholder="Buscar por nombre de ciudadano, radicado, palabra clave o cédula..." type="text">
+</div>
+<!-- Controls & Selectors -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Matter Filters -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-lg">
+<button class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm shadow-sm transition-all" type="button">
+            Todas (4)
+          </button>
+<button class="px-space-md py-1.5 rounded-lg text-secondary hover:text-on-surface font-label-sm text-label-sm transition-all" type="button">
+            Derecho Laboral
+          </button>
+<button class="px-space-md py-1.5 rounded-lg text-secondary hover:text-on-surface font-label-sm text-label-sm transition-all" type="button">
+            Seguridad Social
+          </button>
+<button class="px-space-md py-1.5 rounded-lg text-secondary hover:text-on-surface font-label-sm text-label-sm transition-all" type="button">
+            Despidos
+          </button>
+</div>
+<!-- Sort Select -->
+<div class="flex items-center gap-space-xs bg-surface px-space-md py-2 rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[18px]">sort</span>
+<span class="font-label-sm text-label-sm text-secondary">Orden:</span>
+<select class="bg-transparent font-title-sm text-title-sm text-primary focus:outline-none cursor-pointer">
+<option>Más recientes primero</option>
+<option>Urgencia de prescripción</option>
+<option>Cuantía estimada (Mayor)</option>
+<option>Modalidad presencial</option>
+</select>
+</div>
+<button class="w-10 h-10 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary flex items-center justify-center transition-colors" title="Refrescar solicitudes" type="button">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Main Content Body: Cards Feed + Right Regulatory Sidebar -->
+<main class="w-full px-margin pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Primary Feed: Solicitudes Entrantes (8 Cols) -->
+<section class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Live Alert Banner -->
+<div class="bg-secondary-container/40 p-space-md rounded-xl flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</div>
+<div>
+<span class="font-title-sm text-title-sm text-primary block">Flujo de entrada sincronizado con Ventanilla Única Colegial</span>
+<span class="font-body-sm text-body-sm text-secondary">Los ciudadanos han validado su identidad mediante certificado biométrico civil.</span>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-primary uppercase bg-surface-container-lowest px-space-sm py-1 rounded shadow-sm shrink-0">4 Asignaciones</span>
+</div>
+<!-- CARD 1: Carlos Mario Restrepo G. -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg transition-all hover:shadow-md flex flex-col gap-space-md relative overflow-hidden" id="card-solicitud-1">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-primary-container"></div>
+<!-- Card Header -->
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0 font-headline-sm text-headline-sm font-bold">
+                CR
+              </div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">
+                    Carlos Mario Restrepo G.
+                  </h2>
+<span class="bg-surface-container-low text-secondary text-label-caps font-label-caps px-space-xs py-0.5 rounded">ID: CC 71.392.110</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm mt-1 text-secondary font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">schedule</span>
+                    Hoy, 10:24 AM (Hace 35 min)
+                  </span>
+<span>•</span>
+<span class="flex items-center gap-1 text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                    Modalidad: Presencial (Sede Barranquilla)
+                  </span>
+</div>
+</div>
+</div>
+<!-- Badges -->
+<div class="flex flex-wrap sm:flex-col items-end gap-1.5">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                Pendiente de Evaluación
+              </span>
+<span class="font-label-caps text-label-caps text-primary-container bg-surface-container-low px-space-sm py-0.5 rounded uppercase">
+                Despido Injustificado / Fuero de Salud
+              </span>
+</div>
+</div>
+<!-- Card Body: Verbatim Case Facts -->
+<div class="bg-surface p-space-md rounded-lg space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase font-semibold">Hechos expuestos por el ciudadano:</span>
+<span class="font-label-caps text-label-caps text-outline">Antigüedad: 4 años, 8 meses • Salario base: $4.200.000 COP</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              "Fui despedido de la empresa logística TransCaribe S.A.S el pasado 14 de marzo sin mediar justa causa demostrada. Lo más grave es que me encontraba con recomendaciones médicas vigentes emitidas por la ARL por hernia discal L5-S1 en trámite de calificación de pérdida de capacidad laboral (PCL). No solicitaron autorización previa al Ministerio del Trabajo ni me cancelaron indemnización legal alegando supuesta reestructuración operativa."
+            </p>
+</div>
+<!-- Highlight Box: Legal Assistance Requested -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-space-xs text-primary font-title-sm text-title-sm">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+                Ayuda jurídica solicitada:
+              </div>
+<p class="font-body-sm text-body-sm text-secondary">
+                Acción de Tutela para reintegro inmediato por estabilidad laboral reforzada (fuero de salud), cobro de salarios caídos y sanción del Art. 26 Ley 361 de 1997 (180 días de salario).
+              </p>
+</div>
+<div class="shrink-0 bg-surface-container-lowest px-space-md py-space-xs rounded-lg text-right">
+<span class="font-label-caps text-label-caps text-secondary uppercase block">Estimación litigio</span>
+<span class="font-title-md text-title-md text-primary font-bold">~$38.500.000 COP</span>
+</div>
+</div>
+<!-- Attachments Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs text-body-sm font-body-sm">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-secondary font-medium">Documentos aportados (2):</span>
+<a class="inline-flex items-center gap-1 bg-surface-container px-space-sm py-1 rounded text-primary hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span>
+                Carta_Despido_TransCaribe.pdf (1.2 MB)
+              </a>
+<a class="inline-flex items-center gap-1 bg-surface-container px-space-sm py-1 rounded text-primary hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">description</span>
+                Dictamen_ARL_Recomendaciones.pdf (3.8 MB)
+              </a>
+</div>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span> Integridad criptográfica SHA-256 OK
+            </span>
+</div>
+<!-- Card Actions Footer -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-sm bg-surface-container-lowest">
+<button class="text-primary hover:text-primary-container font-title-sm text-title-sm flex items-center gap-1 self-start sm:self-auto py-2" type="button">
+<span class="material-symbols-outlined text-[18px]">find_in_page</span>
+              Inspeccionar expediente completo &amp; anexos
+            </button>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<!-- Botón Rechazar / Orientar -->
+<button class="flex-1 sm:flex-initial px-space-lg py-2.5 rounded-lg bg-surface hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-space-xs shadow-sm" onclick="alert('Se abrirá el asistente colegiado para emitir informe de no viabilidad o remitir al consultorio jurídico gratuito.')" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">cancel</span>
+                Rechazar / Orientar
+              </button>
+<!-- Botón Primario Aceptar -->
+<button class="flex-1 sm:flex-initial px-space-xl py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-all flex items-center justify-center gap-space-xs shadow-sm hover:shadow" onclick="document.getElementById('card-solicitud-1').classList.add('opacity-50'); alert('Solicitud de Carlos Mario Restrepo aceptada con éxito. Se ha generado la cita presencial y el contrato de mandato preliminar.');" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+                Aceptar Solicitud
+              </button>
+</div>
+</div>
+</article>
+<!-- CARD 2: María Camila Ortiz R. -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg transition-all hover:shadow-md flex flex-col gap-space-md relative overflow-hidden" id="card-solicitud-2">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-primary-container"></div>
+<!-- Card Header -->
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0 font-headline-sm text-headline-sm font-bold">
+                MO
+              </div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">
+                    María Camila Ortiz R.
+                  </h2>
+<span class="bg-surface-container-low text-secondary text-label-caps font-label-caps px-space-xs py-0.5 rounded">ID: CC 1.042.881.049</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm mt-1 text-secondary font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">schedule</span>
+                    Hoy, 08:15 AM (Hace 2h 45 min)
+                  </span>
+<span>•</span>
+<span class="flex items-center gap-1 text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+                    Modalidad: Videollamada (Enlace Seguro)
+                  </span>
+</div>
+</div>
+</div>
+<!-- Badges -->
+<div class="flex flex-wrap sm:flex-col items-end gap-1.5">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                Pendiente de Evaluación
+              </span>
+<span class="font-label-caps text-label-caps text-primary-container bg-surface-container-low px-space-sm py-0.5 rounded uppercase">
+                Liquidación e Horas Extras Insolutas
+              </span>
+</div>
+</div>
+<!-- Card Body: Verbatim Case Facts -->
+<div class="bg-surface p-space-md rounded-lg space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase font-semibold">Hechos expuestos por el ciudadano:</span>
+<span class="font-label-caps text-label-caps text-outline">Antigüedad: 2 años • Cargo: Supervisora de Turnos Hospitalarios</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              "Terminé por renuncia motivada el 28 de febrero tras reiterados incumplimientos de la IPS SaludTotal. Durante los últimos 18 meses realicé más de 45 horas nocturnas y festivas mensuales que nunca fueron reconocidas en el desprendible salarial. Adicionalmente, me entregaron una liquidación de prestaciones sociales deficitaria reteniendo cesantías y sin sanción moratoria."
+            </p>
+</div>
+<!-- Highlight Box: Legal Assistance Requested -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-space-xs text-primary font-title-sm text-title-sm">
+<span class="material-symbols-outlined text-[18px]">balance</span>
+                Ayuda jurídica solicitada:
+              </div>
+<p class="font-body-sm text-body-sm text-secondary">
+                Reliquidación integral de acreencias laborales, cálculo exacto de recargos nocturnos/dominicales y citación prejudicial de conciliación ante el Centro de Arbitraje y Conciliación.
+              </p>
+</div>
+<div class="shrink-0 bg-surface-container-lowest px-space-md py-space-xs rounded-lg text-right">
+<span class="font-label-caps text-label-caps text-secondary uppercase block">Reclamación tasada</span>
+<span class="font-title-md text-title-md text-primary font-bold">~$22.180.000 COP</span>
+</div>
+</div>
+<!-- Attachments Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs text-body-sm font-body-sm">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-secondary font-medium">Documentos aportados (3):</span>
+<a class="inline-flex items-center gap-1 bg-surface-container px-space-sm py-1 rounded text-primary hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">table_view</span> Planillas_Turnos_BioControl.xlsx
+              </a>
+<a class="inline-flex items-center gap-1 bg-surface-container px-space-sm py-1 rounded text-primary hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span> Liquidacion_Prestacional.pdf
+              </a>
+<a class="inline-flex items-center gap-1 bg-surface-container px-space-sm py-1 rounded text-primary hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">mail</span> Carta_Renuncia_Motivada.pdf
+              </a>
+</div>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">verified</span> DocuSign validado
+            </span>
+</div>
+<!-- Card Actions Footer -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-sm bg-surface-container-lowest">
+<button class="text-primary hover:text-primary-container font-title-sm text-title-sm flex items-center gap-1 self-start sm:self-auto py-2" type="button">
+<span class="material-symbols-outlined text-[18px]">find_in_page</span>
+              Ver detalles completos del caso
+            </button>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="flex-1 sm:flex-initial px-space-lg py-2.5 rounded-lg bg-surface hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-space-xs shadow-sm" onclick="alert('Se iniciará el trámite de reorientación jurídica.')" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">cancel</span>
+                Rechazar / Orientar
+              </button>
+<button class="flex-1 sm:flex-initial px-space-xl py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-all flex items-center justify-center gap-space-xs shadow-sm hover:shadow" onclick="document.getElementById('card-solicitud-2').classList.add('opacity-50'); alert('Solicitud de María Camila Ortiz aceptada. Agendada sesión virtual en sala protegida.');" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+                Aceptar Solicitud
+              </button>
+</div>
+</div>
+</article>
+<!-- CARD 3: Julián David Peña M. -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg transition-all hover:shadow-md flex flex-col gap-space-md relative overflow-hidden" id="card-solicitud-3">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-primary-container"></div>
+<!-- Card Header -->
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0 font-headline-sm text-headline-sm font-bold">
+                JP
+              </div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">
+                    Julián David Peña M.
+                  </h2>
+<span class="bg-surface-container-low text-secondary text-label-caps font-label-caps px-space-xs py-0.5 rounded">ID: CC 92.518.204</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm mt-1 text-secondary font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">schedule</span>
+                    Ayer, 16:40 (Hace 18 horas)
+                  </span>
+<span>•</span>
+<span class="flex items-center gap-1 text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+                    Modalidad: Videollamada
+                  </span>
+</div>
+</div>
+</div>
+<!-- Badges -->
+<div class="flex flex-wrap sm:flex-col items-end gap-1.5">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                Pendiente de Evaluación
+              </span>
+<span class="font-label-caps text-label-caps text-primary-container bg-surface-container-low px-space-sm py-0.5 rounded uppercase">
+                Acoso Laboral y Vulneración de Derechos
+              </span>
+</div>
+</div>
+<!-- Card Body: Verbatim Case Facts -->
+<div class="bg-surface p-space-md rounded-lg space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase font-semibold">Hechos expuestos por el ciudadano:</span>
+<span class="font-label-caps text-label-caps text-outline">Empresa: Sector Bancario Privado • Años de servicio: 7</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              "Vengo sufriendo conductas sistemáticas de hostigamiento y descalificación profesional por parte de mi jefatura inmediata tras haberme postulado a la comisión de quejas del Comité de Convivencia Laboral. Me retiraron responsabilidades directivas, restringieron accesos a plataformas corporativas y me trasladaron a una oficina desprovista de herramientas laborales básicas."
+            </p>
+</div>
+<!-- Highlight Box: Legal Assistance Requested -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-space-xs text-primary font-title-sm text-title-sm">
+<span class="material-symbols-outlined text-[18px]">security</span>
+                Ayuda jurídica solicitada:
+              </div>
+<p class="font-body-sm text-body-sm text-secondary">
+                Activación de protocolo formal Ley 1010 de 2006 (Acoso Laboral), blindaje de fuero de protección legal frente a despido retaliatorio y solicitud de intervención del Ministerio del Trabajo.
+              </p>
+</div>
+<div class="shrink-0 bg-surface-container-lowest px-space-md py-space-xs rounded-lg text-right">
+<span class="font-label-caps text-label-caps text-secondary uppercase block">Procedimiento</span>
+<span class="font-title-md text-title-md text-primary font-bold">Vía Administrativa</span>
+</div>
+</div>
+<!-- Attachments Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs text-body-sm font-body-sm">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-secondary font-medium">Documentos aportados (1):</span>
+<a class="inline-flex items-center gap-1 bg-surface-container px-space-sm py-1 rounded text-primary hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">folder_zip</span> Evidencias_Correos_Y_Actas.zip (14.6 MB)
+              </a>
+</div>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">lock</span> Contenido en custodia confidencial
+            </span>
+</div>
+<!-- Card Actions Footer -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-sm bg-surface-container-lowest">
+<button class="text-primary hover:text-primary-container font-title-sm text-title-sm flex items-center gap-1 self-start sm:self-auto py-2" type="button">
+<span class="material-symbols-outlined text-[18px]">find_in_page</span>
+              Ver detalles completos del caso
+            </button>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="flex-1 sm:flex-initial px-space-lg py-2.5 rounded-lg bg-surface hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-space-xs shadow-sm" onclick="alert('Se abrirá el selector de motivos para rechazo fundamentado.')" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">cancel</span>
+                Rechazar / Orientar
+              </button>
+<button class="flex-1 sm:flex-initial px-space-xl py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-all flex items-center justify-center gap-space-xs shadow-sm hover:shadow" onclick="document.getElementById('card-solicitud-3').classList.add('opacity-50'); alert('Solicitud de Julián David Peña admitida. Se ha activado el expediente de protección.');" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+                Aceptar Solicitud
+              </button>
+</div>
+</div>
+</article>
+<!-- CARD 4: Esperanza Gómez B. -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg transition-all hover:shadow-md flex flex-col gap-space-md relative overflow-hidden" id="card-solicitud-4">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-primary-container"></div>
+<!-- Card Header -->
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0 font-headline-sm text-headline-sm font-bold">
+                EG
+              </div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">
+                    Esperanza Gómez B.
+                  </h2>
+<span class="bg-surface-container-low text-secondary text-label-caps font-label-caps px-space-xs py-0.5 rounded">ID: CC 32.748.912</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm mt-1 text-secondary font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">schedule</span>
+                    Ayer, 11:10 (Hace 23 horas)
+                  </span>
+<span>•</span>
+<span class="flex items-center gap-1 text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                    Modalidad: Presencial (Sede Barranquilla)
+                  </span>
+</div>
+</div>
+</div>
+<!-- Badges -->
+<div class="flex flex-wrap sm:flex-col items-end gap-1.5">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                Pendiente de Evaluación
+              </span>
+<span class="font-label-caps text-label-caps text-primary-container bg-surface-container-low px-space-sm py-0.5 rounded uppercase">
+                Controversia Pensional AFP
+              </span>
+</div>
+</div>
+<!-- Card Body: Verbatim Case Facts -->
+<div class="bg-surface p-space-md rounded-lg space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase font-semibold">Hechos expuestos por el ciudadano:</span>
+<span class="font-label-caps text-label-caps text-outline">Edad: 59 años • Semanas cotizadas reportadas: 1.340</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              "El fondo privado Porvenir me negó la reliquidación pensional de vejez y niega computar más de 210 semanas laboradas en los años noventa para una empresa estatal ya liquidada. Solicito demandar la ineficacia del traslado de régimen o el cobro de bono pensional con miras a recuperar el régimen de prima media con Colpensiones."
+            </p>
+</div>
+<!-- Highlight Box: Legal Assistance Requested -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-space-xs text-primary font-title-sm text-title-sm">
+<span class="material-symbols-outlined text-[18px]">fact_check</span>
+                Ayuda jurídica solicitada:
+              </div>
+<p class="font-body-sm text-body-sm text-secondary">
+                Estudio pensional actuarial, demanda ordinaria laboral de ineficacia de traslado pensional por vicio en el consentimiento y solicitud de emisión de bono tipo A.
+              </p>
+</div>
+<div class="shrink-0 bg-surface-container-lowest px-space-md py-space-xs rounded-lg text-right">
+<span class="font-label-caps text-label-caps text-secondary uppercase block">Pretensión pensional</span>
+<span class="font-title-md text-title-md text-primary font-bold">Vitalicia Mensual</span>
+</div>
+</div>
+<!-- Attachments Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs text-body-sm font-body-sm">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-secondary font-medium">Documentos aportados (2):</span>
+<a class="inline-flex items-center gap-1 bg-surface-container px-space-sm py-1 rounded text-primary hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span> Historia_Laboral_Consolidada.pdf (4.1 MB)
+              </a>
+<a class="inline-flex items-center gap-1 bg-surface-container px-space-sm py-1 rounded text-primary hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">article</span> Negativa_Porvenir_Respuesta.pdf (1.8 MB)
+              </a>
+</div>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span> Certificado de semanas verificado
+            </span>
+</div>
+<!-- Card Actions Footer -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-sm bg-surface-container-lowest">
+<button class="text-primary hover:text-primary-container font-title-sm text-title-sm flex items-center gap-1 self-start sm:self-auto py-2" type="button">
+<span class="material-symbols-outlined text-[18px]">find_in_page</span>
+              Ver detalles completos del caso
+            </button>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="flex-1 sm:flex-initial px-space-lg py-2.5 rounded-lg bg-surface hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-space-xs shadow-sm" onclick="alert('Se preparará propuesta de orientación para sede de conciliación.')" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">cancel</span>
+                Rechazar / Orientar
+              </button>
+<button class="flex-1 sm:flex-initial px-space-xl py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-all flex items-center justify-center gap-space-xs shadow-sm hover:shadow" onclick="document.getElementById('card-solicitud-4').classList.add('opacity-50'); alert('Solicitud de Esperanza Gómez aceptada. Radicada en el panel de litigio ordinario.');" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+                Aceptar Solicitud
+              </button>
+</div>
+</div>
+</article>
+</section>
+<!-- Complementary Lateral Regulatory Sidebar (4 Cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Ethical & Legal Compliance Box -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center gap-space-sm text-primary">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase block">Garantía Constitucional</span>
+<h3 class="font-title-sm text-title-sm text-primary">Secreto Profesional Certificado</h3>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg space-y-space-xs">
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold">Art. 74 Constitución Política de Colombia</span>
+<p class="font-body-sm text-body-sm text-secondary leading-relaxed">
+              "El secreto profesional es inviolable". Toda comunicación, anexo y consulta recepcionada en esta consola cuenta con prerrogativa de reserva legal absoluta y no constituye hecho oponible ante entes de control fiscal o penal.
+            </p>
+</div>
+<div class="space-y-space-sm text-body-sm font-body-sm text-secondary">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check</span>
+<span>Custodia probatoria certificada bajo norma ISO 27001 / Ley 527 de 1999.</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check</span>
+<span>Trazabilidad auditada con estampillado cronológico electrónico.</span>
+</div>
+</div>
+</div>
+<!-- 24-Hour SLA Reminder Banner -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm relative overflow-hidden space-y-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">alarm</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase block">Compromiso Colegial</span>
+<h3 class="font-title-sm text-title-sm text-primary">Plazo de Respuesta Óptimo</h3>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-tertiary-container bg-surface-container px-2 py-0.5 rounded font-bold">SLA: &lt;24H</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary leading-relaxed">
+            Mantén tu promedio actual de <strong>1h 45m</strong> para conservar la insignia de <em>"Letrado de Respuesta Inmediata"</em> visible para la ciudadanía en el Directorio Oficial de Barranquilla y Atlántico.
+          </p>
+<!-- Small SLA gauge visualization -->
+<div class="bg-surface p-space-sm rounded-lg space-y-1">
+<div class="flex justify-between text-body-sm font-body-sm">
+<span class="text-secondary">Eficacia de atención mensual</span>
+<span class="font-semibold text-primary">96.4%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 96.4%"></div>
+</div>
+</div>
+</div>
+<!-- Quick Response Templates Widget -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">4g_mobiledata</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase block">Herramientas Rápidas</span>
+<h3 class="font-title-sm text-title-sm text-primary">Plantillas de Respuesta</h3>
+</div>
+</div>
+<a class="font-label-sm text-label-sm text-primary hover:underline" href="#">Gestionar</a>
+</div>
+<div class="space-y-space-xs">
+<button class="w-full p-space-sm bg-surface hover:bg-surface-container text-left rounded-lg transition-colors group flex items-center justify-between" type="button">
+<div>
+<span class="font-title-sm text-title-sm text-primary group-hover:text-primary-container block">Aceptación con citación presencial</span>
+<span class="font-body-sm text-body-sm text-secondary">Fija fecha en sede + solicitud de poder especial.</span>
+</div>
+<span class="material-symbols-outlined text-secondary group-hover:text-primary text-[18px]">chevron_right</span>
+</button>
+<button class="w-full p-space-sm bg-surface hover:bg-surface-container text-left rounded-lg transition-colors group flex items-center justify-between" type="button">
+<div>
+<span class="font-title-sm text-title-sm text-primary group-hover:text-primary-container block">Requerimiento de documentación previa</span>
+<span class="font-body-sm text-body-sm text-secondary">Solicitud de nóminas, historial pensional y anexos.</span>
+</div>
+<span class="material-symbols-outlined text-secondary group-hover:text-primary text-[18px]">chevron_right</span>
+</button>
+<button class="w-full p-space-sm bg-surface hover:bg-surface-container text-left rounded-lg transition-colors group flex items-center justify-between" type="button">
+<div>
+<span class="font-title-sm text-title-sm text-primary group-hover:text-primary-container block">Reorientación a Defensoría / Consultorio</span>
+<span class="font-body-sm text-body-sm text-secondary">En casos de insolvencia o materias ajenas a laboral.</span>
+</div>
+<span class="material-symbols-outlined text-secondary group-hover:text-primary text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Professional Context Widget -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-title-sm text-title-sm">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+            Soporte de la Secretaría Técnica
+          </div>
+<p class="font-body-sm text-body-sm text-secondary">
+            ¿Detectas inconsistencias en la identidad o posible conflicto de interés previo? Remite el número de solicitud a la Secretaría del Colegio mediante radicación interna inmediata.
+          </p>
+</div>
+</aside>
+</div>
+</main>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] py-space-xl mt-space-xl"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[18px]">gavel</span></div><div class="flex flex-col"><span class="font-title-sm text-title-sm text-primary">LexPortal Legal Trust &amp; Compliance</span><span class="font-body-sm text-body-sm text-secondary">Plataforma Institucional para la Práctica Jurídica Certificada</span></div></div><div class="flex flex-wrap items-center justify-center gap-space-lg"><div class="flex items-center gap-space-xs text-secondary"><span class="material-symbols-outlined text-primary text-[18px]">verified_user</span><span class="font-label-sm text-label-sm">Certificación RGPD UE 2016/679</span></div><div class="flex items-center gap-space-xs text-secondary"><span class="material-symbols-outlined text-primary text-[18px]">lock</span><span class="font-label-sm text-label-sm">Cifrado Notarial TLS 1.3 / AES-256</span></div><div class="flex items-center gap-space-xs text-secondary"><span class="material-symbols-outlined text-primary text-[18px]">shield</span><span class="font-label-sm text-label-sm">Custodia y Trazabilidad Probatoria</span></div></div><div class="text-right"><span class="font-body-sm text-body-sm text-secondary block">Sede Electrónica Oficial © 2025</span><span class="font-label-caps text-label-caps text-outline uppercase">Consejo General de Letrados</span></div></div></footer></body></html>

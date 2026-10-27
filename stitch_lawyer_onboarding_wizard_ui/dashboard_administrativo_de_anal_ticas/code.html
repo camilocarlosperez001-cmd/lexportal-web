@@ -1,0 +1,557 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "primary-fixed": "#d6e3ff",
+        "on-secondary-fixed": "#121c2c",
+        "inverse-surface": "#223144",
+        "on-background": "#0d1c2e",
+        "tertiary": "#002625",
+        "primary": "#002045",
+        "tertiary-fixed-dim": "#77d6d3",
+        "on-primary-fixed": "#001b3c",
+        "on-surface": "#0d1c2e",
+        "on-secondary-fixed-variant": "#3d4759",
+        "secondary-fixed-dim": "#bdc7dc",
+        "primary-container": "#1a365d",
+        "secondary-container": "#d6e0f6",
+        "on-error": "#ffffff",
+        "surface-container-highest": "#d4e4fc",
+        "on-primary-fixed-variant": "#2d476f",
+        "on-error-container": "#93000a",
+        "error": "#ba1a1a",
+        "on-tertiary-fixed": "#00201f",
+        "on-surface-variant": "#43474e",
+        "inverse-on-surface": "#eaf1ff",
+        "background": "#f8f9ff",
+        "surface-container-low": "#eff4ff",
+        "on-primary": "#ffffff",
+        "surface-tint": "#455f88",
+        "surface-container-lowest": "#ffffff",
+        "on-primary-container": "#86a0cd",
+        "on-tertiary-fixed-variant": "#00504e",
+        "surface-bright": "#f8f9ff",
+        "outline-variant": "#c4c6cf",
+        "surface": "#f8f9ff",
+        "outline": "#74777f",
+        "secondary-fixed": "#d9e3f9",
+        "error-container": "#ffdad6",
+        "on-secondary-container": "#596376",
+        "tertiary-fixed": "#94f2f0",
+        "surface-variant": "#d4e4fc",
+        "tertiary-container": "#003d3c",
+        "primary-fixed-dim": "#adc7f7",
+        "on-secondary": "#ffffff",
+        "inverse-primary": "#adc7f7",
+        "secondary": "#555f71",
+        "surface-container": "#e5eeff",
+        "on-tertiary-container": "#4cadab",
+        "on-tertiary": "#ffffff",
+        "surface-dim": "#ccdbf4",
+        "surface-container-high": "#dce9ff"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      "spacing": {
+        "space-xs": "0.25rem",
+        "space-sm": "0.5rem",
+        "space-xl": "2rem",
+        "margin-mobile": "1rem",
+        "space-lg": "1.5rem",
+        "gutter": "1.5rem",
+        "margin": "2rem",
+        "gutter-mobile": "1rem",
+        "space-md": "1rem"
+      },
+      "fontFamily": {
+        "display": ["Inter"],
+        "title-sm": ["Inter"],
+        "body-md": ["Inter"],
+        "title-md": ["Inter"],
+        "headline-sm": ["Inter"],
+        "headline-lg-mobile": ["Inter"],
+        "label-sm": ["Inter"],
+        "label-caps": ["Inter"],
+        "body-sm": ["Inter"],
+        "body-lg": ["Inter"],
+        "headline-md": ["Inter"],
+        "label-md": ["Inter"],
+        "headline-lg": ["Inter"]
+      },
+      "fontSize": {
+        "display": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "title-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "600"}],
+        "body-md": ["14px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}],
+        "title-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600"}],
+        "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600"}],
+        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+        "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600"}],
+        "body-sm": ["12px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+        "body-lg": ["16px", {"lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400"}],
+        "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+        "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "600"}]
+      }
+    }
+  }
+}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container"><span class="material-symbols-outlined text-primary text-[28px]">gavel</span><div><div class="font-title-sm text-title-sm text-primary tracking-tight">LexPortal</div><div class="font-label-caps text-label-caps text-secondary uppercase">Control Colegial</div></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs font-label-caps text-label-caps text-secondary uppercase tracking-wider">Gestión Procesal</div><nav class="flex flex-col gap-1 mt-space-xs" data-active-classes="bg-primary-container text-on-primary font-title-sm shadow-sm"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl transition-colors bg-primary-container text-on-primary font-title-sm shadow-sm" data-path="panel-principal" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-body-md text-body-md">Panel Principal</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="bandeja-de-expedientes" href="#"><span class="material-symbols-outlined text-[20px]">folder_managed</span><span class="font-body-md text-body-md">Bandeja de Expedientes</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="validacion-documental" href="#"><span class="material-symbols-outlined text-[20px]">verified_user</span><span class="font-body-md text-body-md">Validación Documental</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="trazabilidad-y-firma" href="#"><span class="material-symbols-outlined text-[20px]">draw</span><span class="font-body-md text-body-md">Trazabilidad y Firma</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="registro-de-colegiados" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-body-md text-body-md">Registro de Colegiados</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="categorias-y-taxonomia" href="#"><span class="material-symbols-outlined text-[20px]">account_tree</span><span class="font-body-md text-body-md">Categorías y Taxonomía</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="libro-de-resoluciones" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-body-md text-body-md">Libro de Resoluciones</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="auditoria-de-sistema" href="#"><span class="material-symbols-outlined text-[20px]">history_edu</span><span class="font-body-md text-body-md">Auditoría de Sistema</span></a></nav></div></div><div class="p-space-md bg-surface-container-lowest m-space-md rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm mb-space-xs"><span class="material-symbols-outlined text-primary text-[18px]">verified</span><span class="font-label-caps text-label-caps text-primary uppercase">Normativa eIDAS</span></div><div class="font-body-sm text-body-sm text-secondary">Nodo de confianza colegial sincronizado bajo estándar RFC 3161.</div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-lg flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-secondary text-[20px]">search</span><input class="w-full h-10 pl-10 pr-4 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-secondary outline-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="Buscar por expediente, DNI colegiado, hash o término..." type="text"></div></div><div class="flex items-center gap-space-lg"><div class="hidden lg:flex items-center gap-space-sm px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm font-semibold text-primary">eIDAS Activo / SLA Óptimo</span></div><button class="relative p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><div class="h-8 w-[1px] bg-outline-variant/30 hidden sm:block"></div><div class="flex items-center gap-space-md"><div class="text-right hidden sm:block"><div class="font-title-sm text-title-sm text-on-surface leading-tight">Dra. M. Santillana</div><div class="font-label-sm text-label-sm text-secondary">Oficial de Cumplimiento</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 flex-1 px-space-xl py-space-lg bg-surface"><div class="flex flex-col w-full">
+<!-- ENCABEZADO Y CONTROLES DE FILTRO TEMPORAL -->
+<section class="flex flex-col gap-space-lg mb-space-xl">
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-lg">
+<div>
+<div class="flex items-center gap-space-xs text-secondary font-label-caps uppercase tracking-wider mb-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">assessment</span>
+<span>Observatorio de Gestión Colegial • Nodo Central</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          Dashboard de Rendimiento y Analíticas
+        </h1>
+<p class="font-body-md text-body-md text-secondary mt-1 max-w-2xl">
+          Consolidado institucional de actividad colegial, solicitudes ciudadanas y tiempos de respuesta procesal bajo estándar de trazabilidad eIDAS.
+        </p>
+</div>
+<!-- Selector de Fechas Prominente y Botón Exportar -->
+<div class="flex flex-wrap items-center gap-space-sm bg-surface-container-lowest p-1.5 rounded-xl shadow-sm">
+<!-- Preset Toggles Rápidos -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-lg">
+<button class="px-space-sm py-1 font-label-sm text-label-sm text-secondary hover:text-on-surface rounded-md transition-colors" type="button">Hoy</button>
+<button class="px-space-sm py-1 font-label-sm text-label-sm text-secondary hover:text-on-surface rounded-md transition-colors" type="button">7D</button>
+<button class="px-space-sm py-1 font-label-sm text-label-sm bg-primary-container text-on-primary font-semibold rounded-md shadow-xs" type="button">30D</button>
+<button class="px-space-sm py-1 font-label-sm text-label-sm text-secondary hover:text-on-surface rounded-md transition-colors" type="button">Este Mes</button>
+<button class="px-space-sm py-1 font-label-sm text-label-sm text-secondary hover:text-on-surface rounded-md transition-colors" type="button">Trimestre</button>
+<button class="px-space-sm py-1 font-label-sm text-label-sm text-secondary hover:text-on-surface rounded-md transition-colors" type="button">Año</button>
+</div>
+<!-- Custom Date Range Picker Button -->
+<button class="flex items-center gap-space-sm px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">calendar_today</span>
+<span class="font-label-md text-label-md font-semibold text-primary">01 Oct 2025 — 31 Oct 2025</span>
+<span class="font-label-sm text-label-sm text-secondary">(Últimos 30 días)</span>
+<span class="material-symbols-outlined text-[18px] text-secondary ml-1">expand_more</span>
+</button>
+<!-- Export Dropdown Trigger -->
+<div class="relative group">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-all shadow-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">ios_share</span>
+<span>Exportar Informe</span>
+<span class="material-symbols-outlined text-[16px]">arrow_drop_down</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- FILA DE STAT CARDS (5 MÉTRICAS CLAVE) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-space-md mb-space-xl">
+<!-- Tarjeta 1: Total Solicitudes Ciudadanas -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Solicitudes Totales</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">folder_special</span>
+</div>
+</div>
+<div class="my-space-md">
+<div class="font-display text-display text-primary tracking-tight">3,842</div>
+<div class="font-body-sm text-body-sm text-secondary mt-0.5">Expedientes ingresados</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container/40 text-primary-container font-semibold">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +14.2%
+        </span>
+<span class="font-label-sm text-label-sm text-outline">vs mes anterior</span>
+</div>
+</div>
+<!-- Tarjeta 2: Nuevos Abogados Colegiados -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Letrados Activos</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+</div>
+<div class="my-space-md">
+<div class="font-display text-display text-primary tracking-tight">1,280</div>
+<div class="font-body-sm text-body-sm text-secondary mt-0.5">Censo con firma eIDAS</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container/40 text-primary-container font-semibold">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +8.5%
+        </span>
+<span class="font-label-sm text-label-sm text-outline">incorporaciones</span>
+</div>
+</div>
+<!-- Tarjeta 3: Tasa de Resolución & Asignación -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Tasa de Resolución</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+</div>
+<div class="my-space-md">
+<div class="font-display text-display text-primary tracking-tight">94.6%</div>
+<div class="font-body-sm text-body-sm text-secondary mt-0.5">Asignación dentro de plazo</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container/40 text-primary-container font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> +2.1%
+        </span>
+<span class="font-label-sm text-label-sm text-outline">cumplimiento SLA</span>
+</div>
+</div>
+<!-- Tarjeta 4: Tiempo Medio de Respuesta Colegial -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Tiempo Medio SLA</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">timelapse</span>
+</div>
+</div>
+<div class="my-space-md">
+<div class="font-display text-display text-primary tracking-tight">1h 48m</div>
+<div class="font-body-sm text-body-sm text-secondary mt-0.5">Primera respuesta formal</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-primary font-semibold">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span> -24 min
+        </span>
+<span class="font-label-sm text-label-sm text-outline">más ágil</span>
+</div>
+</div>
+<!-- Tarjeta 5: Consultas Orientativas Completadas -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Consultas Guía</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">forum</span>
+</div>
+</div>
+<div class="my-space-md">
+<div class="font-display text-display text-primary tracking-tight">18,920</div>
+<div class="font-body-sm text-body-sm text-secondary mt-0.5">Ciudadanos orientados</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container/40 text-primary-container font-semibold">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +11.8%
+        </span>
+<span class="font-label-sm text-label-sm text-outline">tráfico canal web</span>
+</div>
+</div>
+</section>
+<!-- SECCIONES ANALÍTICAS PRINCIPALES (GRID 2 TARJETAS AMPLIAS) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start mb-space-xl">
+<!-- TARJETA IZQUIERDA: Distribución de Solicitudes por Especialidad Legal (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl shadow-sm flex flex-col overflow-hidden">
+<!-- Encabezado de la Tarjeta -->
+<div class="p-space-lg bg-surface-container-low/40 flex flex-wrap items-center justify-between gap-space-md">
+<div>
+<h2 class="font-title-md text-title-md text-primary">
+            Distribución de Solicitudes por Especialidad Legal
+          </h2>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+            Volumen procesado durante el ciclo seleccionado vs cuota máxima asignable
+          </p>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center bg-surface-container-low p-1 rounded-lg">
+<button class="px-space-sm py-1 font-label-sm text-label-sm bg-primary-container text-on-primary rounded-md font-semibold" type="button">Barras</button>
+<button class="px-space-sm py-1 font-label-sm text-label-sm text-secondary hover:text-on-surface rounded-md" type="button">Mensual</button>
+</div>
+<button class="p-1.5 text-secondary hover:text-primary rounded-lg hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">filter_list</span>
+</button>
+</div>
+</div>
+<!-- Leyenda y Métricas Resumen -->
+<div class="px-space-lg pt-space-md pb-space-sm flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-lg">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Expedientes Admitidos</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-secondary-fixed-dim"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">En Verificación Preliminar</span>
+</div>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-secondary">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+<span>Sincronizado hace 4 min</span>
+</div>
+</div>
+<!-- Cuerpo: Gráfico de Barras Moderno SVG Vectorial con Ejes y Tooltip Integrado -->
+<div class="p-space-lg flex flex-col">
+<div class="relative w-full h-80 flex flex-col justify-between">
+<!-- Ejes y Líneas Guía de Fondo -->
+<div class="absolute inset-0 flex flex-col justify-between pointer-events-none opacity-40">
+<div class="w-full flex items-center justify-between font-label-caps text-label-caps text-outline">
+<span>1,200</span>
+<div class="w-full mx-2 h-px bg-surface-container-high"></div>
+</div>
+<div class="w-full flex items-center justify-between font-label-caps text-label-caps text-outline">
+<span>900</span>
+<div class="w-full mx-2 h-px bg-surface-container-high"></div>
+</div>
+<div class="w-full flex items-center justify-between font-label-caps text-label-caps text-outline">
+<span>600</span>
+<div class="w-full mx-2 h-px bg-surface-container-high"></div>
+</div>
+<div class="w-full flex items-center justify-between font-label-caps text-label-caps text-outline">
+<span>300</span>
+<div class="w-full mx-2 h-px bg-surface-container-high"></div>
+</div>
+<div class="w-full flex items-center justify-between font-label-caps text-label-caps text-outline">
+<span>0</span>
+<div class="w-full mx-2 h-px bg-surface-container-high"></div>
+</div>
+</div>
+<!-- Barras Comparativas de Especialidades -->
+<div class="relative h-64 mt-4 flex items-end justify-between px-6 z-10">
+<!-- 1. Laboral -->
+<div class="flex flex-col items-center gap-2 group w-12">
+<div class="flex items-end gap-1.5 h-56 w-full justify-center">
+<div class="w-4 bg-primary rounded-t-sm transition-all duration-300 group-hover:bg-primary-container" style="height: 82%;"></div>
+<div class="w-4 bg-secondary-fixed-dim rounded-t-sm transition-all duration-300 group-hover:bg-secondary" style="height: 28%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Laboral</span>
+</div>
+<!-- 2. Mercantil -->
+<div class="flex flex-col items-center gap-2 group w-12">
+<div class="flex items-end gap-1.5 h-56 w-full justify-center">
+<div class="w-4 bg-primary rounded-t-sm transition-all duration-300 group-hover:bg-primary-container" style="height: 65%;"></div>
+<div class="w-4 bg-secondary-fixed-dim rounded-t-sm transition-all duration-300 group-hover:bg-secondary" style="height: 22%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Mercantil</span>
+</div>
+<!-- 3. Penal (Con Tooltip de Datos Destacado) -->
+<div class="flex flex-col items-center gap-2 group relative w-12">
+<!-- Tooltip Interactivo -->
+<div class="absolute -top-12 bg-primary text-on-primary px-2.5 py-1 rounded-md shadow-md text-center pointer-events-none whitespace-nowrap z-20">
+<div class="font-label-caps text-label-caps">984 Admitidos • 142 Verif.</div>
+</div>
+<div class="flex items-end gap-1.5 h-56 w-full justify-center">
+<div class="w-4 bg-primary rounded-t-sm ring-2 ring-primary-fixed" style="height: 94%;"></div>
+<div class="w-4 bg-secondary-fixed-dim rounded-t-sm" style="height: 35%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">Penal</span>
+</div>
+<!-- 4. Civil -->
+<div class="flex flex-col items-center gap-2 group w-12">
+<div class="flex items-end gap-1.5 h-56 w-full justify-center">
+<div class="w-4 bg-primary rounded-t-sm transition-all duration-300 group-hover:bg-primary-container" style="height: 74%;"></div>
+<div class="w-4 bg-secondary-fixed-dim rounded-t-sm transition-all duration-300 group-hover:bg-secondary" style="height: 30%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Civil</span>
+</div>
+<!-- 5. Administrativo -->
+<div class="flex flex-col items-center gap-2 group w-12">
+<div class="flex items-end gap-1.5 h-56 w-full justify-center">
+<div class="w-4 bg-primary rounded-t-sm transition-all duration-300 group-hover:bg-primary-container" style="height: 48%;"></div>
+<div class="w-4 bg-secondary-fixed-dim rounded-t-sm transition-all duration-300 group-hover:bg-secondary" style="height: 18%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium truncate max-w-[50px] text-center">Admin.</span>
+</div>
+<!-- 6. Familia -->
+<div class="flex flex-col items-center gap-2 group w-12">
+<div class="flex items-end gap-1.5 h-56 w-full justify-center">
+<div class="w-4 bg-primary rounded-t-sm transition-all duration-300 group-hover:bg-primary-container" style="height: 58%;"></div>
+<div class="w-4 bg-secondary-fixed-dim rounded-t-sm transition-all duration-300 group-hover:bg-secondary" style="height: 24%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Familia</span>
+</div>
+</div>
+</div>
+<!-- Barra de Progreso Acumulativa Inferior -->
+<div class="mt-space-lg pt-space-md bg-surface-container-low/50 p-space-md rounded-lg flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant font-medium">Capacidad de Asignación Colegial de Turno de Oficio</span>
+<span class="text-primary font-bold">78.4% asignado</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 45%;"></div>
+<div class="bg-primary-container h-full" style="width: 25%;"></div>
+<div class="bg-secondary-fixed-dim h-full" style="width: 8.4%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- TARJETA DERECHA: Resumen Operativo por Delegación Colegial (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl shadow-sm flex flex-col overflow-hidden">
+<!-- Encabezado de la Tarjeta -->
+<div class="p-space-lg bg-surface-container-low/40 flex items-center justify-between">
+<div>
+<h2 class="font-title-md text-title-md text-primary">
+            Resumen Operativo por Delegación
+          </h2>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+            Rendimiento por demarcación y cumplimiento normativo
+          </p>
+</div>
+<button class="text-primary hover:text-primary-container font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" type="button">
+<span>Ver todo</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Filtro Rápido y Buscador Local -->
+<div class="px-space-lg py-space-sm bg-surface flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Estado:</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-medium bg-primary-container text-on-primary">Todas (6)</span>
+</div>
+<div class="relative">
+<input class="h-8 pl-7 pr-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline outline-none focus:ring-1 focus:ring-primary w-36" placeholder="Filtrar sede..." type="text">
+<span class="material-symbols-outlined absolute left-2 top-1/2 -translate-y-1/2 text-secondary text-[14px]">search</span>
+</div>
+</div>
+<!-- Tabla de Datos Limpia y Profesional -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low font-label-caps text-label-caps text-secondary uppercase tracking-wider">
+<th class="py-3 px-space-md">Sede / Delegación</th>
+<th class="py-3 px-space-md text-right">Expedientes</th>
+<th class="py-3 px-space-md text-center">SLA Medio</th>
+<th class="py-3 px-space-md text-right">Admisión</th>
+<th class="py-3 px-space-md text-center">Estado</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm text-on-surface">
+<!-- Fila 1: Sede Central -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-md">
+<div class="font-title-sm text-title-sm text-primary">Sede Central (Palacio)</div>
+<div class="text-[11px] text-secondary">Jurisdicción Provincial</div>
+</td>
+<td class="py-3 px-space-md text-right font-semibold text-primary">1,420</td>
+<td class="py-3 px-space-md text-center">
+<span class="font-medium text-primary">1h 12m</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<span class="text-primary font-semibold">96.8%</span>
+</td>
+<td class="py-3 px-space-md text-center">
+<span class="inline-flex items-center gap-1 font-label-caps text-label-caps px-2 py-0.5 rounded-full bg-secondary-container/50 text-primary-container font-bold">
+                  ÓPTIMO
+                </span>
+</td>
+</tr>
+<!-- Fila 2: Delegación Norte -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-md">
+<div class="font-title-sm text-title-sm text-primary">Delegación Norte</div>
+<div class="text-[11px] text-secondary">Distrito Judicial 02</div>
+</td>
+<td class="py-3 px-space-md text-right font-semibold text-primary">845</td>
+<td class="py-3 px-space-md text-center">
+<span class="font-medium text-primary">1h 45m</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<span class="text-primary font-semibold">94.2%</span>
+</td>
+<td class="py-3 px-space-md text-center">
+<span class="inline-flex items-center gap-1 font-label-caps text-label-caps px-2 py-0.5 rounded-full bg-secondary-container/50 text-primary-container font-bold">
+                  ÓPTIMO
+                </span>
+</td>
+</tr>
+<!-- Fila 3: Delegación Metropolitana Sur -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-md">
+<div class="font-title-sm text-title-sm text-primary">Metropolitana Sur</div>
+<div class="text-[11px] text-secondary">Distrito Judicial 04</div>
+</td>
+<td class="py-3 px-space-md text-right font-semibold text-primary">690</td>
+<td class="py-3 px-space-md text-center">
+<span class="font-medium text-primary">2h 10m</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<span class="text-primary font-semibold">91.4%</span>
+</td>
+<td class="py-3 px-space-md text-center">
+<span class="inline-flex items-center gap-1 font-label-caps text-label-caps px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-bold">
+                  NORMAL
+                </span>
+</td>
+</tr>
+<!-- Fila 4: Delegación Costa / Marítimo -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-md">
+<div class="font-title-sm text-title-sm text-primary">Distrito Costa</div>
+<div class="text-[11px] text-secondary">Audiencia Local</div>
+</td>
+<td class="py-3 px-space-md text-right font-semibold text-primary">512</td>
+<td class="py-3 px-space-md text-center">
+<span class="font-medium text-error">3h 05m</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<span class="text-primary font-semibold">88.1%</span>
+</td>
+<td class="py-3 px-space-md text-center">
+<span class="inline-flex items-center gap-1 font-label-caps text-label-caps px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-bold">
+                  ALERTA SLA
+                </span>
+</td>
+</tr>
+<!-- Fila 5: Turno Penitenciario Especial -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-md">
+<div class="font-title-sm text-title-sm text-primary">Comisión Penitenciaria</div>
+<div class="text-[11px] text-secondary">Servicio de Guardia 24h</div>
+</td>
+<td class="py-3 px-space-md text-right font-semibold text-primary">375</td>
+<td class="py-3 px-space-md text-center">
+<span class="font-medium text-primary">0h 54m</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<span class="text-primary font-semibold">98.5%</span>
+</td>
+<td class="py-3 px-space-md text-center">
+<span class="inline-flex items-center gap-1 font-label-caps text-label-caps px-2 py-0.5 rounded-full bg-secondary-container/50 text-primary-container font-bold">
+                  CRÍTICO OK
+                </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pie de Tarjeta con Auditoría Rápida -->
+<div class="p-space-md bg-surface-container-low/30 flex items-center justify-between text-secondary font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">lock_clock</span>
+<span>Hash de Integridad: <code class="font-mono text-[11px] text-primary">SHA256:d8a9...40fe</code></span>
+</div>
+<button class="text-primary hover:underline font-medium" type="button">Auditar registros</button>
+</div>
+</div>
+</section>
+<!-- SECCIÓN INFERIOR: RESUMEN DE INCIDENCIAS & CALIDAD COLEGIAL -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-lg">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[28px]">policy</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-primary">Comisión Deontológica &amp; Control de Expedientes</div>
+<div class="font-body-sm text-body-sm text-secondary">
+          0 incidencias de caducidad en el periodo. Todos los plazos procesales computados bajo el calendario judicial 2025.
+        </div>
+</div>
+</div>
+<div class="flex items-center gap-space-md w-full md:w-auto justify-end">
+<div class="text-right hidden sm:block">
+<div class="font-label-caps text-label-caps text-secondary uppercase">Siguiente informe ordinario</div>
+<div class="font-label-md text-label-md font-semibold text-primary">Viernes, 07 Nov • 10:00 AM</div>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md font-medium transition-colors" type="button">
+        Configurar Alertas
+      </button>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] py-space-md px-space-xl mt-auto"><div class="w-full flex flex-col md:flex-row items-center justify-between gap-space-md text-secondary"><div class="flex flex-wrap items-center gap-space-lg"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">security</span><span class="font-label-sm text-label-sm">ENS Nivel Alto Acreditado</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">fingerprint</span><span class="font-label-sm text-label-sm">Integridad Criptográfica SHA-256</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">schedule</span><span class="font-label-sm text-label-sm">Sellado de Tiempo Cualificado RFC 3161</span></div></div><div class="font-label-sm text-label-sm text-outline">© 2025 LexPortal Back-Office Colegial. Todos los derechos reservados.</div></div></footer></div></body></html>

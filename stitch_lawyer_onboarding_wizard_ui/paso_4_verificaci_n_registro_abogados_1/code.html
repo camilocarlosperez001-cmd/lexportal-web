@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-surface-variant":"#43474e","on-secondary-fixed-variant":"#3d4759","tertiary-container":"#003d3c","on-tertiary":"#ffffff","primary":"#002045","on-error":"#ffffff","tertiary":"#002625","on-background":"#0d1c2e","primary-fixed-dim":"#adc7f7","outline":"#74777f","inverse-on-surface":"#eaf1ff","on-tertiary-container":"#4cadab","on-primary-fixed-variant":"#2d476f","secondary-fixed":"#d9e3f9","on-secondary-container":"#596376","on-secondary-fixed":"#121c2c","on-primary-container":"#86a0cd","inverse-primary":"#adc7f7","primary-fixed":"#d6e3ff","on-error-container":"#93000a","on-secondary":"#ffffff","surface-container-low":"#eff4ff","on-surface":"#0d1c2e","secondary-container":"#d6e0f6","surface-dim":"#ccdbf4","surface-variant":"#d4e4fc","surface-container-lowest":"#ffffff","surface-container-highest":"#d4e4fc","on-primary":"#ffffff","on-tertiary-fixed-variant":"#00504e","secondary-fixed-dim":"#bdc7dc","error-container":"#ffdad6","tertiary-fixed":"#94f2f0","surface-bright":"#f8f9ff","secondary":"#555f71","on-tertiary-fixed":"#00201f","surface-container-high":"#dce9ff","background":"#f8f9ff","primary-container":"#1a365d","surface-container":"#e5eeff","surface-tint":"#455f88","inverse-surface":"#223144","error":"#ba1a1a","on-primary-fixed":"#001b3c","outline-variant":"#c4c6cf","tertiary-fixed-dim":"#77d6d3","surface":"#f8f9ff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","margin-mobile":"1rem","space-md":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-xl":"2rem","gutter":"1.5rem","margin":"2rem"},"fontFamily":{"headline-lg":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"headline-md":["Inter"],"display":["Inter"],"title-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"title-sm":["Inter"],"label-caps":["Inter"],"body-sm":["Inter"],"headline-sm":["Inter"],"headline-lg-mobile":["Inter"]},"fontSize":{"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"title-sm":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="LexPortal Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VzfnUAQjz4EvzbZtSdZp1LqEzrdiMGsoLI3z9tofoLVOH-gGDye186E08wD9YZmxB7w_oECNgJ0IYmjN1ncLV1nvsdLryhmff5-nnDFmp4PlxFiSvf2sjewzXsgCAcxwvYaviaFsk237VmqNH7h6K11Yd7bKAnck4sxM4PC45-8Jw0GT4eTAXdu4yiyTiWz2pYvIIe2FzYihsEiU4GWJJthmmH3xab_u3sjPge6q6jQA"/><span class="font-title-sm text-title-sm text-primary tracking-tight hidden sm:inline">LexPortal</span><span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps uppercase">Portal para Abogados</span></div><div class="flex items-center gap-space-lg"><div class="hidden lg:flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-tertiary-container">lock</span><span>Conexión Segura cifrada de 256 bits</span></div><div class="hidden md:flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px]">help</span><span>¿Necesitas ayuda?</span><a class="text-primary hover:text-on-primary-container font-label-sm text-label-sm transition-colors" href="mailto:contacto@lexportal.jur">contacto@lexportal.jur</a></div><nav class="flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary"><a aria-current="page" class="font-label-md transition-colors px-3 py-1.5 rounded bg-primary-container text-on-primary" data-path="registro-abogados" href="#">Registro</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors px-3 py-1.5 rounded" data-path="cerrar-sesion" href="#">Guardar y salir</a></nav><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)] flex-1 flex flex-col justify-between"><div class="flex flex-col w-full">
+<!-- Progress Stepper Tracker Bar -->
+<section class="w-full bg-surface-container-lowest border-b border-outline-variant/30 py-6 px-6 lg:px-12">
+<div class="max-w-5xl mx-auto">
+<div class="flex items-center justify-between relative">
+<!-- Connecting Line Background -->
+<div class="absolute left-6 right-6 top-5 -translate-y-1/2 h-0.5 bg-outline-variant/40 -z-0"></div>
+<!-- Active Filled Line (Steps 1-3 Completed, connecting to Step 4) -->
+<div class="absolute left-6 w-3/4 top-5 -translate-y-1/2 h-0.5 bg-primary-container -z-0 transition-all duration-500"></div>
+<!-- Step 1: Completed -->
+<div class="flex flex-col items-center relative z-10 group">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-label-md text-label-md shadow-sm transition-transform group-hover:scale-105">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<span class="mt-2 font-label-caps text-label-caps uppercase text-on-surface-variant text-center hidden sm:block tracking-wide">Paso 1</span>
+<span class="font-label-md text-label-md text-on-surface text-center hidden md:block">Credenciales</span>
+</div>
+<!-- Step 2: Completed -->
+<div class="flex flex-col items-center relative z-10 group">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-label-md text-label-md shadow-sm transition-transform group-hover:scale-105">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<span class="mt-2 font-label-caps text-label-caps uppercase text-on-surface-variant text-center hidden sm:block tracking-wide">Paso 2</span>
+<span class="font-label-md text-label-md text-on-surface text-center hidden md:block">Perfil Público</span>
+</div>
+<!-- Step 3: Completed -->
+<div class="flex flex-col items-center relative z-10 group">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-label-md text-label-md shadow-sm transition-transform group-hover:scale-105">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<span class="mt-2 font-label-caps text-label-caps uppercase text-on-surface-variant text-center hidden sm:block tracking-wide">Paso 3</span>
+<span class="font-label-md text-label-md text-on-surface text-center hidden md:block">Especialidad</span>
+</div>
+<!-- Step 4: Active / Current -->
+<div class="flex flex-col items-center relative z-10">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary ring-4 ring-primary-fixed flex items-center justify-center font-title-sm text-title-sm shadow-md animate-pulse">
+            4
+          </div>
+<span class="mt-2 font-label-caps text-label-caps uppercase text-primary text-center hidden sm:block tracking-wider font-semibold">Paso 4</span>
+<span class="font-title-sm text-title-sm text-primary text-center hidden md:block">Validación Profesional</span>
+</div>
+<!-- Step 5: Inactive -->
+<div class="flex flex-col items-center relative z-10">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant border-2 border-outline-variant flex items-center justify-center font-label-md text-label-md">
+            5
+          </div>
+<span class="mt-2 font-label-caps text-label-caps uppercase text-outline text-center hidden sm:block tracking-wide">Paso 5</span>
+<span class="font-label-md text-label-md text-outline text-center hidden md:block">Confirmación</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Workflow Container -->
+<section class="max-w-4xl mx-auto w-full px-6 py-10 flex-1 flex flex-col justify-between">
+<div class="space-y-8">
+<!-- Step Header -->
+<div class="space-y-2">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-primary font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+<span>Acreditación Colegiada Obligatoria</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Validación Profesional</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+          Verificamos la idoneidad y vigencia de la acreditación jurídica para garantizar la máxima seguridad en la red de profesionales.
+        </p>
+</div>
+<!-- Information & Security Alert Banner (Chakra style alert status="info") -->
+<div class="rounded-xl bg-surface-container-low border border-primary-fixed-dim/60 p-4 sm:p-5 flex items-start gap-4 shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">gpp_maybe</span>
+</div>
+<div class="space-y-1">
+<h2 class="font-title-sm text-title-sm text-primary flex items-center gap-2">
+            Privacidad garantizada: Tus documentos son confidenciales y no serán visibles en tu perfil público
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Solo nuestro comité de validación legal revisará estos soportes para fines de verificación exclusiva bajo estándares RGPD y cifrado simétrico en reposo.
+          </p>
+</div>
+</div>
+<!-- Professional Card Registration Form Section -->
+<div class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 shadow-sm space-y-6">
+<!-- Input FormControl: Professional License Number -->
+<div class="space-y-2">
+<label class="block font-title-sm text-title-sm text-on-surface" for="tarjeta-profesional">
+            Número de tarjeta profesional <span class="text-error">*</span>
+</label>
+<div class="relative rounded-lg shadow-sm">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<input class="w-full pl-11 pr-4 py-2.5 rounded-lg border border-outline-variant focus:border-primary focus:ring-4 focus:ring-primary-fixed-dim/40 text-on-surface font-body-md text-body-md placeholder:text-outline outline-none transition-all duration-200" id="tarjeta-profesional" name="tarjeta-profesional" placeholder="Ej. TP-348291 o número de colegiatura oficial" type="text" value="TP-492104-CSJ"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">info</span>
+            Emitido por el Consejo Superior de la Judicatura o Colegio de Abogados competente.
+          </p>
+</div>
+<!-- Drag & Drop Upload Zone (Chakra UI style file uploader) -->
+<div class="space-y-3">
+<label class="block font-title-sm text-title-sm text-on-surface">
+            Soportes documentales de acreditación <span class="text-error">*</span>
+</label>
+<div class="relative group rounded-xl border-2 border-dashed border-outline-variant hover:border-primary-container bg-surface-bright/70 hover:bg-surface-container-low transition-all duration-200 p-8 sm:py-12 flex flex-col items-center justify-center text-center cursor-pointer" id="dropzone">
+<input accept=".pdf,.png,.jpg,.jpeg" class="hidden" id="file-upload" multiple="" type="file"/>
+<div class="w-16 h-16 rounded-full bg-secondary-container text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200 shadow-sm">
+<span class="material-symbols-outlined text-[32px]">cloud_upload</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-1">
+              Sube tu documento de identidad y tarjeta profesional
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+              Arrastra tus archivos aquí o <span class="text-primary font-semibold underline underline-offset-2">haz clic para explorar</span> en tu equipo. Formatos permitidos: PDF, JPG, PNG (máx. 15MB por archivo).
+            </p>
+<div class="mt-4 flex flex-wrap items-center justify-center gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 bg-surface-container-high px-2 py-0.5 rounded text-on-surface">
+<span class="material-symbols-outlined text-[14px]">lock</span> Cifrado TLS 1.3
+              </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-high px-2 py-0.5 rounded text-on-surface">
+<span class="material-symbols-outlined text-[14px]">verified</span> Cotejo OCR Inmediato
+              </span>
+</div>
+</div>
+</div>
+<!-- Staged / Pre-uploaded file attachments -->
+<div class="space-y-3 pt-2">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">
+            Archivos adjuntos cargados (2 de 2)
+          </span>
+<!-- File 1: Professional Card -->
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-bright border border-outline-variant/60 shadow-xs hover:border-primary-container transition-colors">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-10 h-10 rounded bg-tertiary-fixed text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">picture_as_pdf</span>
+</div>
+<div class="min-w-0">
+<p class="font-title-sm text-title-sm text-on-surface truncate">
+                  Tarjeta_Profesional_Frente_Dorso.pdf
+                </p>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span>2.4 MB</span>
+<span>•</span>
+<span class="text-tertiary-container font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Verificado preliminarmente
+                  </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0 ml-4">
+<button aria-label="Previsualizar archivo" class="p-2 text-on-surface-variant hover:text-primary rounded-md hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button aria-label="Eliminar archivo" class="p-2 text-on-surface-variant hover:text-error rounded-md hover:bg-error-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- File 2: ID Document -->
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-bright border border-outline-variant/60 shadow-xs hover:border-primary-container transition-colors">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-10 h-10 rounded bg-tertiary-fixed text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">picture_as_pdf</span>
+</div>
+<div class="min-w-0">
+<p class="font-title-sm text-title-sm text-on-surface truncate">
+                  Documento_Identidad_Cedula.pdf
+                </p>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span>1.8 MB</span>
+<span>•</span>
+<span class="text-tertiary-container font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Verificado preliminarmente
+                  </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0 ml-4">
+<button aria-label="Previsualizar archivo" class="p-2 text-on-surface-variant hover:text-primary rounded-md hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button aria-label="Eliminar archivo" class="p-2 text-on-surface-variant hover:text-error rounded-md hover:bg-error-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Legal Disclaimer Checkbox -->
+<div class="pt-2 flex items-start gap-3">
+<input checked="" class="mt-1 h-4 w-4 rounded border-outline text-primary focus:ring-primary focus:ring-offset-0 cursor-pointer" id="veracity-check" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface-variant cursor-pointer select-none" for="veracity-check">
+            Declaro bajo gravedad de juramento que la información y documentación aportada es auténtica, verídica y corresponde fielmente a mi condición jurídica en ejercicio activo.
+          </label>
+</div>
+</div>
+</div>
+<!-- Wizard Navigation Footer Actions -->
+<div class="pt-10 mt-8 border-t border-outline-variant/40 flex items-center justify-between">
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-surface-container-lowest border border-outline-variant hover:bg-surface-container text-on-surface font-label-md text-label-md shadow-xs transition-colors" data-path="paso-3-especialidad" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+        Atrás
+      </a>
+<div class="flex items-center gap-3">
+<span class="hidden sm:inline-flex text-on-surface-variant font-label-sm text-label-sm">
+          Paso 4 de 5 completándose
+        </span>
+<button class="inline-flex items-center gap-2.5 px-6 py-2.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md shadow-sm transition-all duration-200 hover:shadow" id="btn-enviar-revision" type="button">
+<span>Enviar a revisión</span>
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Interactive script for dropzone feedback and mock trigger -->
+<script>
+    (function() {
+      const dropzone = document.getElementById('dropzone');
+      const fileInput = document.getElementById('file-upload');
+      const submitBtn = document.getElementById('btn-enviar-revision');
+
+      if (dropzone && fileInput) {
+        dropzone.addEventListener('click', () => {
+          fileInput.click();
+        });
+
+        dropzone.addEventListener('dragover', (e) => {
+          e.preventDefault();
+          dropzone.classList.add('bg-surface-container-high', 'border-primary');
+        });
+
+        dropzone.addEventListener('dragleave', (e) => {
+          e.preventDefault();
+          dropzone.classList.remove('bg-surface-container-high', 'border-primary');
+        });
+
+        dropzone.addEventListener('drop', (e) => {
+          e.preventDefault();
+          dropzone.classList.remove('bg-surface-container-high', 'border-primary');
+        });
+      }
+
+      if (submitBtn) {
+        submitBtn.addEventListener('click', () => {
+          const originalText = submitBtn.innerHTML;
+          submitBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> Validando documentación...';
+          submitBtn.disabled = true;
+          setTimeout(() => {
+            submitBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span> ¡Enviado exitosamente!';
+            submitBtn.classList.replace('bg-primary-container', 'bg-tertiary-container');
+          }, 1400);
+        });
+      }
+    })();
+  </script>
+</div><footer class="w-full bg-surface-container-low py-space-lg"><div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-space-md"><p class="text-on-surface-variant font-body-sm text-body-sm">© 2025 LexPortal Legal Technologies. Todos los derechos reservados.</p><div class="flex items-center gap-space-lg text-on-surface-variant font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" data-path="politicas-privacidad" href="#">Políticas de Privacidad</a><a class="hover:text-on-surface transition-colors" data-path="terminos-legales" href="#">Términos Legales</a><a class="hover:text-on-surface transition-colors" data-path="soporte" href="#">Soporte</a></div></div></footer></main></body></html>

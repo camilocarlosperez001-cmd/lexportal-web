@@ -1,0 +1,221 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-surface-variant":"#43474e","on-secondary-fixed-variant":"#3d4759","tertiary-container":"#003d3c","on-tertiary":"#ffffff","primary":"#002045","on-error":"#ffffff","tertiary":"#002625","on-background":"#0d1c2e","primary-fixed-dim":"#adc7f7","outline":"#74777f","inverse-on-surface":"#eaf1ff","on-tertiary-container":"#4cadab","on-primary-fixed-variant":"#2d476f","secondary-fixed":"#d9e3f9","on-secondary-container":"#596376","on-secondary-fixed":"#121c2c","on-primary-container":"#86a0cd","inverse-primary":"#adc7f7","primary-fixed":"#d6e3ff","on-error-container":"#93000a","on-secondary":"#ffffff","surface-container-low":"#eff4ff","on-surface":"#0d1c2e","secondary-container":"#d6e0f6","surface-dim":"#ccdbf4","surface-variant":"#d4e4fc","surface-container-lowest":"#ffffff","surface-container-highest":"#d4e4fc","on-primary":"#ffffff","on-tertiary-fixed-variant":"#00504e","secondary-fixed-dim":"#bdc7dc","error-container":"#ffdad6","tertiary-fixed":"#94f2f0","surface-bright":"#f8f9ff","secondary":"#555f71","on-tertiary-fixed":"#00201f","surface-container-high":"#dce9ff","background":"#f8f9ff","primary-container":"#1a365d","surface-container":"#e5eeff","surface-tint":"#455f88","inverse-surface":"#223144","error":"#ba1a1a","on-primary-fixed":"#001b3c","outline-variant":"#c4c6cf","tertiary-fixed-dim":"#77d6d3","surface":"#f8f9ff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","margin-mobile":"1rem","space-md":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-xl":"2rem","gutter":"1.5rem","margin":"2rem"},"fontFamily":{"headline-lg":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"headline-md":["Inter"],"display":["Inter"],"title-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"title-sm":["Inter"],"label-caps":["Inter"],"body-sm":["Inter"],"headline-sm":["Inter"],"headline-lg-mobile":["Inter"]},"fontSize":{"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"title-sm":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="LexPortal Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VzfnUAQjz4EvzbZtSdZp1LqEzrdiMGsoLI3z9tofoLVOH-gGDye186E08wD9YZmxB7w_oECNgJ0IYmjN1ncLV1nvsdLryhmff5-nnDFmp4PlxFiSvf2sjewzXsgCAcxwvYaviaFsk237VmqNH7h6K11Yd7bKAnck4sxM4PC45-8Jw0GT4eTAXdu4yiyTiWz2pYvIIe2FzYihsEiU4GWJJthmmH3xab_u3sjPge6q6jQA"><span class="font-title-sm text-title-sm text-primary tracking-tight hidden sm:inline">LexPortal</span><span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps uppercase">Portal para Abogados</span></div><div class="flex items-center gap-space-lg"><div class="hidden lg:flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-tertiary-container">lock</span><span>Conexión Segura cifrada de 256 bits</span></div><div class="hidden md:flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px]">help</span><span>¿Necesitas ayuda?</span><a class="text-primary hover:text-on-primary-container font-label-sm text-label-sm transition-colors" href="mailto:contacto@lexportal.jur">contacto@lexportal.jur</a></div><nav class="flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary"><a aria-current="page" class="font-label-md transition-colors px-3 py-1.5 rounded bg-primary-container text-on-primary" data-path="registro-abogados" href="#">Registro</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors px-3 py-1.5 rounded" data-path="cerrar-sesion" href="#">Guardar y salir</a></nav><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)] flex-1 flex flex-col justify-between"><div class="flex flex-col w-full">
+<!-- Subtle decorative ambient background glows contained in relative parent -->
+<div class="relative w-full overflow-hidden py-space-xl px-6 lg:px-12">
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-secondary-container/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute bottom-10 right-10 w-96 h-96 bg-surface-container-high/40 rounded-full blur-2xl pointer-events-none -z-10"></div>
+<div class="max-w-4xl mx-auto flex flex-col gap-space-xl">
+<!-- Stepper: 5 Pasos Chakra UI Architectural Flow -->
+<nav aria-label="Progreso del Registro" class="w-full bg-surface-container-lowest p-space-md sm:p-space-lg rounded-xl shadow-sm">
+<ol class="flex items-center justify-between w-full">
+<!-- Paso 1: Completado -->
+<li class="relative flex-1 flex flex-col items-center group">
+<div class="flex items-center w-full">
+<span class="w-8 h-8 mx-auto rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center shrink-0 shadow-sm transition-transform hover:scale-105">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</div>
+<span class="hidden sm:inline-block mt-2 font-label-sm text-label-sm text-on-surface-variant font-medium text-center">
+              1. Identidad
+            </span>
+<div class="absolute top-4 left-1/2 w-full h-[2px] bg-tertiary-container -z-0"></div>
+</li>
+<!-- Paso 2: Completado -->
+<li class="relative flex-1 flex flex-col items-center group">
+<div class="flex items-center w-full">
+<span class="w-8 h-8 mx-auto rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center shrink-0 shadow-sm transition-transform hover:scale-105">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</div>
+<span class="hidden sm:inline-block mt-2 font-label-sm text-label-sm text-on-surface-variant font-medium text-center">
+              2. Matrícula
+            </span>
+<div class="absolute top-4 left-1/2 w-full h-[2px] bg-tertiary-container -z-0"></div>
+</li>
+<!-- Paso 3: Completado -->
+<li class="relative flex-1 flex flex-col items-center group">
+<div class="flex items-center w-full">
+<span class="w-8 h-8 mx-auto rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center shrink-0 shadow-sm transition-transform hover:scale-105">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</div>
+<span class="hidden sm:inline-block mt-2 font-label-sm text-label-sm text-on-surface-variant font-medium text-center">
+              3. Documentos
+            </span>
+<div class="absolute top-4 left-1/2 w-full h-[2px] bg-tertiary-container -z-0"></div>
+</li>
+<!-- Paso 4: Completado -->
+<li class="relative flex-1 flex flex-col items-center group">
+<div class="flex items-center w-full">
+<span class="w-8 h-8 mx-auto rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center shrink-0 shadow-sm transition-transform hover:scale-105">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</div>
+<span class="hidden sm:inline-block mt-2 font-label-sm text-label-sm text-on-surface-variant font-medium text-center">
+              4. Despacho
+            </span>
+<div class="absolute top-4 left-1/2 w-full h-[2px] bg-tertiary-container -z-0"></div>
+</li>
+<!-- Paso 5: Activo / Completado -->
+<li class="relative flex flex-col items-center">
+<div class="flex items-center">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-md ring-4 ring-secondary-container">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+</span>
+</div>
+<span class="hidden sm:inline-block mt-2 font-title-sm text-title-sm text-primary font-semibold text-center">
+              5. Confirmación
+            </span>
+</li>
+</ol>
+</nav>
+<!-- Main Success Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-lg p-space-lg sm:p-space-xl flex flex-col items-center text-center transition-all duration-300">
+<!-- Emblema de Éxito Visual -->
+<div class="relative mb-space-lg">
+<div class="w-24 h-24 rounded-full bg-surface-container-low flex items-center justify-center shadow-inner">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary text-[38px]" style="font-variation-settings: 'FILL' 1;">
+                verified
+              </span>
+</div>
+</div>
+<!-- Badge de seguridad flotante -->
+<div class="absolute -bottom-2 -right-2 bg-primary text-on-primary rounded-full px-2.5 py-0.5 flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-[12px] text-tertiary-fixed">lock</span>
+<span class="font-label-caps text-label-caps">256-BIT</span>
+</div>
+</div>
+<!-- Título Principal -->
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          ¡Registro completado!
+        </h1>
+<!-- Mensaje de Estado Central -->
+<div class="mt-space-sm max-w-xl flex flex-col gap-space-sm">
+<p class="font-body-lg text-body-lg text-on-surface font-medium">
+            Tu perfil ha sido creado exitosamente y se encuentra <span class="text-primary-container font-semibold">Pendiente de Validación</span>. Te notificaremos pronto.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Nuestro equipo legal valida las credenciales en un plazo promedio de 12 a 24 horas hábiles. Mientras tanto, puedes explorar tu panel de control y familiarizarte con las herramientas.
+          </p>
+</div>
+<!-- Tarjeta Informativa Resumida (Chakra UI Box Architecture) -->
+<div class="w-full max-w-xl mt-space-lg bg-surface-container-low rounded-xl p-space-lg text-left shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-surface-container-lowest/60 -mx-space-lg -mt-space-lg px-space-lg pt-space-md rounded-t-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">feed</span>
+<span class="font-title-sm text-title-sm text-primary">Resumen de Radicación</span>
+</div>
+<!-- Status Badge -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-primary-container font-label-sm text-label-sm font-semibold shadow-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+              Pendiente de Validación
+            </span>
+</div>
+<!-- Metadatos de la solicitud -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-xs flex flex-col justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Código de Solicitud</span>
+<div class="flex items-center justify-between mt-1">
+<span class="font-title-md text-title-md text-primary font-semibold tracking-tight">#REG-2025-8492</span>
+<button aria-label="Copiar código" class="p-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors" id="btn-copy" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-xs flex flex-col justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Tiempo Estimado</span>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+<span class="font-title-md text-title-md text-primary font-semibold">Menos de 24 horas</span>
+</div>
+</div>
+</div>
+<!-- Mini checklist de validación automatizada -->
+<div class="mt-space-md bg-surface-container-lowest p-space-md rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">check_circle</span>
+                Documento de identidad cotejado
+              </span>
+<span class="font-semibold text-primary">100%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary-container h-full w-full rounded-full transition-all duration-500"></div>
+</div>
+</div>
+</div>
+<!-- Grupo de Acciones y Botones -->
+<div class="mt-space-xl w-full max-w-xl flex flex-col sm:flex-row items-center justify-center gap-space-md">
+<!-- Botón Secundario Descargar PDF -->
+<a class="w-full sm:w-auto order-2 sm:order-1 inline-flex items-center justify-center gap-2 px-space-lg py-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors shadow-xs" href="#">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Descargar comprobante (PDF)</span>
+</a>
+<!-- Botón Primario "Ir a mi panel" -->
+<a class="w-full sm:w-auto order-1 sm:order-2 inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-title-sm text-title-sm transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0" href="#">
+<span>Ir a mi panel</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Pie de tarjeta / Retorno sutil -->
+<div class="mt-space-lg pt-space-md text-center">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors inline-flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span>Volver al inicio público de LexPortal</span>
+</a>
+</div>
+</div>
+<!-- Trust & Verification Notice Block -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-xs flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-surface-container-low text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+</div>
+<div>
+<h2 class="font-title-sm text-title-sm text-primary">Notificación digital</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Recibirás un email en cuanto el consejo directivo apruebe tu habilitación.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-xs flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-surface-container-low text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">shield_person</span>
+</div>
+<div>
+<h2 class="font-title-sm text-title-sm text-primary">Cumplimiento RGPD</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Custodia estricta bajo secreto profesional legal de todos los documentos cargados.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-xs flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-surface-container-low text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div>
+<h2 class="font-title-sm text-title-sm text-primary">Asistencia colegiada</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Mesa técnica disponible para responder dudas sobre acreditaciones especiales.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    (function() {
+      const copyBtn = document.getElementById('btn-copy');
+      if (copyBtn) {
+        copyBtn.addEventListener('click', function() {
+          const textToCopy = '#REG-2025-8492';
+          navigator.clipboard.writeText(textToCopy).then(() => {
+            const icon = copyBtn.querySelector('.material-symbols-outlined');
+            if (icon) {
+              icon.textContent = 'check';
+              setTimeout(() => {
+                icon.textContent = 'content_copy';
+              }, 2000);
+            }
+          }).catch(() => {});
+        });
+      }
+    })();
+  </script>
+</div><footer class="w-full bg-surface-container-low py-space-lg"><div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-space-md"><p class="text-on-surface-variant font-body-sm text-body-sm">© 2025 LexPortal Legal Technologies. Todos los derechos reservados.</p><div class="flex items-center gap-space-lg text-on-surface-variant font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" data-path="politicas-privacidad" href="#">Políticas de Privacidad</a><a class="hover:text-on-surface transition-colors" data-path="terminos-legales" href="#">Términos Legales</a><a class="hover:text-on-surface transition-colors" data-path="soporte" href="#">Soporte</a></div></div></footer></main></body></html>
