@@ -328,9 +328,9 @@ export function RecuperarPasswordPage() {
           <Alert.Content>
             <Alert.Title>El enlace no es válido o ya se utilizó</Alert.Title>
             <Alert.Description>
-              {enlace.error || motivoEnlace
-                ? `${enlace.error ?? motivoEnlace} Solicita uno nuevo con el formulario de abajo.`
-                : 'Los enlaces de recuperación caducan y solo pueden usarse una vez. Solicita uno nuevo.'}
+              {enlace.error ?? (motivoEnlace
+                ? `${motivoEnlace} Solicita uno nuevo con el formulario de abajo.`
+                : 'Los enlaces de recuperación caducan y solo pueden usarse una vez. Solicita uno nuevo.')}
             </Alert.Description>
           </Alert.Content>
         </Alert.Root>
