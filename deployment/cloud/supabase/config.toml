@@ -1,0 +1,44 @@
+project_id = "LexPortalCloud"
+
+[functions.enviar-correos]
+enabled = true
+verify_jwt = false
+
+[auth]
+enable_signup = true
+additional_redirect_urls = ["https://lexportal-web.vercel.app/auth/callback", "https://lexportal-web.vercel.app/recuperar-password", "lexportal://login", "lexportal://restablecer", "http://localhost:8081/login", "http://localhost:8081/restablecer", "http://127.0.0.1:8081/login", "http://127.0.0.1:8081/restablecer"]
+site_url = "https://lexportal-web.vercel.app"
+
+[auth.email]
+enable_confirmations = true
+max_frequency = "1m0s"
+otp_length = 8
+
+[auth.mfa.totp]
+enroll_enabled = true
+verify_enabled = true
+
+[db.pooler]
+default_pool_size = 15
+max_client_conn = 200
+
+[storage.vector]
+enabled = false
+
+[auth.email.smtp]
+enabled = true
+host = "env(SMTP_HOST)"
+port = 465
+user = "env(SMTP_USER)"
+pass = "env(SMTP_PASS)"
+admin_email = "env(SMTP_ADMIN_EMAIL)"
+sender_name = "LexPortal"
+
+# Enlaces HTTPS compartidos con la app y el fallback web. No usar ConfirmationURL.
+[auth.email.template.confirmation]
+subject = "Confirma tu cuenta en LexPortal"
+content_path = "./supabase/templates/confirmation.html"
+
+[auth.email.template.recovery]
+subject = "Restablece tu contraseña en LexPortal"
+content_path = "./supabase/templates/recovery.html"

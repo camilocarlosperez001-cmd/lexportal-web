@@ -1,6 +1,12 @@
 # AGENTS.md — LexPortal
 
+## Supabase Cloud (27/10/2026)
+
+Producción usa el proyecto `kpksbvvzbjsugnxgphdw` y el workdir `deployment/cloud`, documentado en su README. Sus dos migraciones baseline/permisos están aplicadas. El `supabase/` raíz conserva el estado/historial local incompleto: no hacer db push de sus 42 archivos ni desplegar desde allí el receptor de correo antiguo a Cloud. Las futuras migraciones/función protegida de producción viven en `deployment/cloud/supabase`. Los clientes mantienen tablas/RPC existentes, sin nuevas firmas ni buckets. El correo exige secreto interno, relee la notificación y usa dos configuraciones Vault y secretos Edge; nunca claves de servidor en VITE_*. Cron está activo en Cloud y pausado en local. Los 19 usuarios, datos y 22 archivos se preservaron; las URLs legales Cloud conservan IDs/contenido/aceptaciones. Tipos regenerados desde Cloud. Ver `deployment/cloud/README.md` para despliegue, conservación y pruebas; no publicar respaldos o secretos.
+
 ## Propósito y alcance
+
+Enlaces Auth web/móvil (27/10/2026): ver `deployment/cloud/auth-app-links.md`. La web publicada consume `token_hash` en `/auth/callback` y `/recuperar-password` con intercambio una sola vez y limpieza de URL; conserva fragmentos antiguos del SDK. Las plantillas Cloud apuntan primero a Vercel. `public/.well-known/assetlinks.json` contiene la huella Android EAS real de `com.lexportal.mobile`. No servir HTML SPA para `.well-known` ni publicar AASA ficticio: falta Apple Developer/Team ID. En el workdir Cloud se aplicaron además dos migraciones de datos (`20261027184500` y `20261027185000`) para tres usuarios Auth heredados con campos internos/fechas nulos; no cambian contratos, roles ni contraseñas. Los cuatro archivos Cloud registrados deben conservarse. No confundir el QR Expo Go con una app propia instalada.
 
 Estas instrucciones aplican a todo el repositorio. LexPortal conecta ciudadanos con abogados mediante búsqueda pública, verificación profesional, solicitudes de contacto y mensajería. La interfaz y los mensajes al usuario se escriben en español.
 
