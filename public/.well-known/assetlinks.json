@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.lexportal.mobile",
+      "sha256_cert_fingerprints": [
+        "E0:FD:0F:15:1C:1C:74:9A:8B:9E:A1:60:DE:E4:4A:1C:CD:04:D4:6D:F7:89:14:CF:A1:15:AF:1D:6A:C0:B3:5E"
+      ]
+    }
+  }
+]

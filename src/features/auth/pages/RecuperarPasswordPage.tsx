@@ -25,6 +25,7 @@ import { supabase } from '../../../lib/supabase'
 import { mensajeDeError } from '../../../utils/errores'
 import { LIMITES_REGISTRO, validarConfirmacion, validarContrasena, validarCorreo } from '../../../utils/validaciones'
 import { useSesion } from '../hooks/useSesion'
+import { useAuthEmailLink } from '../hooks/useAuthEmailLink'
 import { actualizarContrasena, cerrarSesion, solicitarRecuperacion } from '../services/auth'
 import { esFalloDeRed } from '../types'
 
@@ -50,10 +51,11 @@ function errorDelEnlace(): string | null {
   const parametros = new URLSearchParams(window.location.hash.replace(/^#/, ''))
   const descripcion = parametros.get('error_description') ?? parametros.get('error')
   if (!descripcion) return null
-  return descripcion.replace(/\+/g, ' ')
+  return 'El enlace no es válido, ha caducado o ya se utilizó.'
 }
 
 export function RecuperarPasswordPage() {
+  const enlace = useAuthEmailLink('recovery')
   const { estado: estadoSesion, usuario } = useSesion()
   const navegar = useNavigate()
 
@@ -88,9 +90,11 @@ export function RecuperarPasswordPage() {
   // Un error declarado por el enlace manda sobre todo lo demás. Si el enlace traía
   // parámetros de recuperación y no abrió sesión, se considera vencido o ya usado.
   let estadoEnlace: EstadoEnlace
-  if (motivoEnlace) {
+  if (enlace.checking) {
+    estadoEnlace = 'comprobando'
+  } else if (enlace.error || motivoEnlace) {
     estadoEnlace = 'invalido'
-  } else if (haySesion || recuperacionDetectada) {
+  } else if (enlace.valid || haySesion || recuperacionDetectada) {
     estadoEnlace = 'valido'
   } else if (enlaceDeRecuperacion()) {
     estadoEnlace = estadoSesion === 'cargando' ? 'comprobando' : 'invalido'
@@ -324,8 +328,8 @@ export function RecuperarPasswordPage() {
           <Alert.Content>
             <Alert.Title>El enlace no es válido o ya se utilizó</Alert.Title>
             <Alert.Description>
-              {motivoEnlace
-                ? `El enlace informó: ${motivoEnlace}. Solicita uno nuevo con el formulario de abajo.`
+              {enlace.error || motivoEnlace
+                ? `${enlace.error ?? motivoEnlace} Solicita uno nuevo con el formulario de abajo.`
                 : 'Los enlaces de recuperación caducan y solo pueden usarse una vez. Solicita uno nuevo.'}
             </Alert.Description>
           </Alert.Content>
