@@ -136,7 +136,7 @@ serve(async (req) => {
       from: `"LexPortal" <${Deno.env.get("SMTP_USER")}>`,
       to: cuenta.correo,
       subject: asunto,
-      text: texto,
+      text: `${texto}\n\nAccede a LexPortal: https://lexportal.app/login`,
     });
 
     // 7. Marcar la notificación como enviada exitosamente

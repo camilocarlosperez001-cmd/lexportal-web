@@ -6,8 +6,8 @@ verify_jwt = false
 
 [auth]
 enable_signup = true
-additional_redirect_urls = ["https://lexportal-web.vercel.app/auth/callback", "https://lexportal-web.vercel.app/recuperar-password", "lexportal://login", "lexportal://restablecer", "http://localhost:8081/login", "http://localhost:8081/restablecer", "http://127.0.0.1:8081/login", "http://127.0.0.1:8081/restablecer"]
-site_url = "https://lexportal-web.vercel.app"
+additional_redirect_urls = ["https://lexportal.app/auth/callback","https://lexportal.app/recuperar-password","https://lexportal-web.vercel.app/auth/callback","https://lexportal-web.vercel.app/recuperar-password","lexportal://login","lexportal://restablecer","http://localhost:8081/login","http://localhost:8081/restablecer","http://127.0.0.1:8081/login","http://127.0.0.1:8081/restablecer"]
+site_url = "https://lexportal.app"
 
 [auth.email]
 enable_confirmations = true

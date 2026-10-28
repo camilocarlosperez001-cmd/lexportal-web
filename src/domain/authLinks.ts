@@ -1,4 +1,4 @@
-export const AUTH_WEB_ORIGIN = 'https://lexportal-web.vercel.app';
+export const AUTH_WEB_ORIGIN = 'https://lexportal.app';
 export const AUTH_LINK_PATHS = { signup: '/auth/callback', recovery: '/recuperar-password' } as const;
 export type AuthLinkPurpose = keyof typeof AUTH_LINK_PATHS;
 export type AuthLinkPayload = { kind: 'none' } | { kind: 'error' } | { kind: 'hash'; tokenHash: string; type: 'email' | 'recovery' } | { kind: 'session'; accessToken: string; refreshToken: string };

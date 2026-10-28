@@ -3,6 +3,7 @@ import type { User } from '@supabase/supabase-js'
 import { supabase } from '../../../lib/supabase'
 import { mensajeDeError } from '../../../utils/errores'
 import { cerrarSesion as cerrarSesionAuth, obtenerCuenta, type Cuenta } from '../services/auth'
+import { observeSession } from '../services/sessionObserver'
 import { SesionContext, type EstadoSesion, type ValorSesion } from '../sesionContext'
 
 /** Mantiene la sesión de Supabase y la fila de public.cuentas del usuario autenticado. */
@@ -13,62 +14,33 @@ export function SesionProvider({ children }: PropsWithChildren) {
   const [error, setError] = useState<string | null>(null)
   const [intento, setIntento] = useState(0)
 
-  const cargarCuenta = useCallback(async (usuarioId: string) => {
-    try {
-      const fila = await obtenerCuenta(usuarioId)
-      setCuenta(fila)
-      setError(null)
-      setEstado('con-sesion')
-    } catch (fallo: unknown) {
-      setCuenta(null)
-      setError(mensajeDeError(fallo, 'No pudimos leer tu cuenta. Inténtalo de nuevo.'))
-      setEstado('error')
-    }
-  }, [])
-
   useEffect(() => {
-    let vigente = true
-
-    void supabase.auth.getSession().then(({ data, error: errorSesion }) => {
-      if (!vigente) return
-      if (errorSesion) {
-        setError(mensajeDeError(errorSesion, 'No pudimos comprobar tu sesión.'))
-        setEstado('error')
-        return
-      }
-      if (!data.session) {
-        setUsuario(null)
-        setCuenta(null)
-        setEstado('sin-sesion')
-        return
-      }
-      setUsuario(data.session.user)
-      void cargarCuenta(data.session.user.id)
+    return observeSession({
+      getSession: async () => {
+        const { data, error: sessionError } = await supabase.auth.getSession()
+        if (sessionError) throw sessionError
+        return data.session
+      },
+      subscribe: listener => {
+        const { data } = supabase.auth.onAuthStateChange((event, session) => {
+          if (event !== 'INITIAL_SESSION') listener(session)
+        })
+        return () => data.subscription.unsubscribe()
+      },
+      loadAccount: obtenerCuenta,
+      publish: snapshot => {
+        setEstado(snapshot.estado)
+        setUsuario(snapshot.usuario)
+        setCuenta(snapshot.cuenta)
+        setError(snapshot.error)
+      },
+      errorMessage: error => mensajeDeError(error, 'No pudimos comprobar tu sesión o leer tu cuenta. Inténtalo de nuevo.'),
+      defer: run => {
+        const timer = setTimeout(run, 0)
+        return () => clearTimeout(timer)
+      },
     })
-
-    const { data } = supabase.auth.onAuthStateChange((evento, sesion) => {
-      // La sesión inicial ya se resolvió con getSession; se evita una segunda carga.
-      if (!vigente || evento === 'INITIAL_SESSION') return
-      // Se difiere la consulta: dentro del callback no deben hacerse llamadas al cliente.
-      setTimeout(() => {
-        if (!vigente) return
-        if (!sesion) {
-          setUsuario(null)
-          setCuenta(null)
-          setError(null)
-          setEstado('sin-sesion')
-          return
-        }
-        setUsuario(sesion.user)
-        void cargarCuenta(sesion.user.id)
-      }, 0)
-    })
-
-    return () => {
-      vigente = false
-      data.subscription.unsubscribe()
-    }
-  }, [cargarCuenta, intento])
+  }, [intento])
 
   const recargar = useCallback(async () => {
     setIntento((valor) => valor + 1)

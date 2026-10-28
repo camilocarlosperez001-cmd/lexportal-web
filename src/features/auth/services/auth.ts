@@ -2,6 +2,7 @@
 // para el alta de cuentas, el inicio y cierre de sesión y el restablecimiento de contraseña.
 
 import { supabase } from '../../../lib/supabase'
+import { AUTH_WEB_ORIGIN, AUTH_LINK_PATHS, type AuthLinkPurpose } from '../../../domain/authLinks'
 import type { Json, Tables } from '../../../types/supabase'
 import { validarContrasena } from '../../../utils/validaciones'
 import { registrarAceptaciones } from '../../privacidad/services/legales'
@@ -17,6 +18,12 @@ import {
 } from '../types'
 
 export type Cuenta = Tables<'cuentas'>
+
+function authCallbackUrl(purpose: AuthLinkPurpose): string {
+  const origin = import.meta.env.VITE_SUPABASE_URL?.replace(/\/$/, '') === 'https://kpksbvvzbjsugnxgphdw.supabase.co'
+    ? AUTH_WEB_ORIGIN : window.location.origin
+  return origin + AUTH_LINK_PATHS[purpose]
+}
 
 export async function obtenerCuenta(usuarioId: string): Promise<Cuenta> {
   const { data, error } = await supabase.from('cuentas').select('*').eq('id', usuarioId).maybeSingle()
@@ -41,7 +48,7 @@ export async function cerrarSesion(): Promise<void> {
 export async function solicitarRecuperacion(correo: string): Promise<void> {
   // Ruta incluidas en additional_redirect_urls de supabase/config.toml.
   const { error } = await supabase.auth.resetPasswordForEmail(correo.trim().toLowerCase(), {
-    redirectTo: `${window.location.origin}/recuperar-password`,
+    redirectTo: authCallbackUrl('recovery'),
   })
   if (error) throw error
 }
@@ -229,7 +236,7 @@ export async function registrarCuenta(datos: DatosRegistro): Promise<ResultadoRe
     email: datos.correo.trim().toLowerCase(),
     password: datos.contrasena,
     options: {
-      emailRedirectTo: `${window.location.origin}/auth/callback`,
+      emailRedirectTo: authCallbackUrl('signup'),
       data: {
         rol: datos.rol,
         nombre_completo: datos.nombreCompleto.trim(),
