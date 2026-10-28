@@ -1,5 +1,7 @@
 # Auth HTTPS para web y app
 
+Actualización del 28/10/2026: dominio canónico `https://lexportal.app`; ver [cambio de dominio y sesión](domain-change.md). Se conservan los retornos Vercel y nativos anteriores. La asociación del dominio nuevo requiere un APK que lo declare. El resto de esta página documenta la implantación inicial del 27/10.
+
 Actualizado el 27/10/2026. Dominio `https://lexportal-web.vercel.app`; paquete/bundle móvil `com.lexportal.mobile`.
 
 La web ya se publicó con el commit `91b52d2` y las plantillas Auth Cloud se activaron después. No requiere cambiar llamadas a tablas/RPC.

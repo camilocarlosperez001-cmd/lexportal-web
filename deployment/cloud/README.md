@@ -2,6 +2,8 @@
 
 Destino: `kpksbvvzbjsugnxgphdw`. Migración inicial realizada el 27 de octubre de 2026 desde el estado local auditado. Web: https://lexportal-web.vercel.app.
 
+Desde el 28/10/2026 la web canónica es https://lexportal.app. Ver [actualización de dominio](domain-change.md). Los callbacks anteriores se conservan; las URLs se actualizaron con una configuración mínima, sin cambiar el SMTP Hostinger que el usuario configuró. No usar las credenciales locales antiguas para aplicar este cambio.
+
 Este directorio es la fuente de despliegue **Cloud**. El `supabase/` de la raíz conserva el historial local original (42 archivos, solo 11 registrados) y la función local anterior. No ejecutar sus migraciones pendientes contra producción ni desplegar desde allí `enviar-correos`: se perdería la protección de servidor añadida en Cloud.
 
 ## Historial de producción

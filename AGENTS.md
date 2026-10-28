@@ -2,6 +2,8 @@
 
 ## Supabase Cloud (27/10/2026)
 
+Dominio canónico desde el 28/10: `https://lexportal.app`; ver `deployment/cloud/domain-change.md`. Auth mantiene diez retornos exactos, preservando los anteriores. La actualización de URLs se hizo sin tocar el SMTP Hostinger activo. `enviar-correos` de producción incluye un enlace genérico al login del dominio nuevo. `SesionProvider` reutiliza `observeSession`: cancela respuestas/errores antiguos, espera la sesión actual fuera del callback Auth y limpia cuenta al cambiar de identidad. Pruebas: `node --test tests/session-observer.test.cjs`; no reintroducir consultas sin control de vigencia ni resolver estos casos abriendo RLS. No se modificaron políticas, grants o contratos de datos.
+
 Producción usa el proyecto `kpksbvvzbjsugnxgphdw` y el workdir `deployment/cloud`, documentado en su README. Sus dos migraciones baseline/permisos están aplicadas. El `supabase/` raíz conserva el estado/historial local incompleto: no hacer db push de sus 42 archivos ni desplegar desde allí el receptor de correo antiguo a Cloud. Las futuras migraciones/función protegida de producción viven en `deployment/cloud/supabase`. Los clientes mantienen tablas/RPC existentes, sin nuevas firmas ni buckets. El correo exige secreto interno, relee la notificación y usa dos configuraciones Vault y secretos Edge; nunca claves de servidor en VITE_*. Cron está activo en Cloud y pausado en local. Los 19 usuarios, datos y 22 archivos se preservaron; las URLs legales Cloud conservan IDs/contenido/aceptaciones. Tipos regenerados desde Cloud. Ver `deployment/cloud/README.md` para despliegue, conservación y pruebas; no publicar respaldos o secretos.
 
 ## Propósito y alcance

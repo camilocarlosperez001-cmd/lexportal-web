@@ -1,0 +1,13 @@
+# Cambio de dominio y sincronización de sesión — 28/10/2026
+
+Dominio canónico: `https://lexportal.app`.
+
+- Cloud Site URL verificada y callbacks exactos `/auth/callback`, `/recuperar-password` autorizados. Se preservaron los ocho retornos anteriores: diez en total. Las plantillas reutilizan `.SiteURL` y `.TokenHash`.
+- Actualización remota con un workdir temporal mínimo que solo declara URLs; comparación SMTP antes/después idéntica. Conservar el SMTP Hostinger activo. No hacer config push con credenciales antiguas de desarrollo. La fuente de producción mantiene sus referencias env, nunca contraseñas literales.
+- Auth web usa el dominio canónico cuando se conecta al proyecto Cloud, incluso desde el alias Vercel. El entorno local conserva su propio origen. `enviar-correos` incluye un enlace genérico al login canónico y conserva sus guardias/preferencias. La función se desplegó por separado; Git/Vercel no la despliegan automáticamente.
+- `SesionProvider` utiliza `observeSession` para evitar que la lectura inicial o una cuenta anterior sobrescriban la identidad recién confirmada. La consulta de cuenta espera al SDK y comprueba token/identidad; los resultados y errores obsoletos se descartan. Los fallos de permisos actuales siguen siendo errores visibles.
+- Cinco pruebas de concurrencia: `node --test tests/session-observer.test.cjs`. Lint/build web correctos; advertencia previa de bundle grande. Código web publicado en `a3bba33`.
+- El error original comunicado no se reprodujo en la primera prueba real. Se corrigió una carrera demostrable y se comprobó la confirmación con dos usuarios temporales, incluido cambio desde otra sesión existente, con entrada a Mis solicitudes sin recarga. Se verificaron solicitudes propias y bloqueo de lecturas ajenas/anónimas en API. No se modificó RLS, grants, tablas ni RPC; no hay migraciones. Pedir código/texto/operación si el error vuelve a aparecer.
+- Android móvil conserva los filtros del dominio anterior y añade los dos del nuevo; iOS conserva ambos associatedDomains, todavía pendiente de equipo Apple y AASA. `assetlinks.json` servido como JSON en el dominio nuevo con el certificado EAS existente. APK preview versión 2 solicitado: `05a32b5b-8306-4966-904c-03e6314d7b63`. Un binario anterior requiere actualización.
+
+No se enviaron correos reales ni se reenviaron avisos históricos para estas comprobaciones. Los usuarios reales se conservan y las únicas cuentas retiradas son las temporales creadas para la prueba. Informes privados y detalle completo: `.local-backups/domain-2026-10-28` y `docs/domain-change.md` del repositorio móvil.
